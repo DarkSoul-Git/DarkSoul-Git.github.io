@@ -30,7 +30,6 @@
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
 
-  <link rel="stylesheet" href="css/tiny-slider.css">
   <link rel="stylesheet" href="css/aos.css">
   <link rel="stylesheet" href="css/glightbox.min.css">
   <link rel="stylesheet" href="css/style.css">
@@ -39,23 +38,52 @@
 
 
   <title>Best 5 Chilling Places in Kerala - DarkSoul</title>
+
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Organization",
+      "url": "https://darksoul-git.github.io/",
+      "name": "DarkSoul - Best UI/UX Designs and blogs for better understanding",
+      "description": "DarkSoul, your number-one source for all things. We're dedicated to giving you the very best of designs and blogs with an emphasis on technical, graphical, and logical",
+      "logo": "https://darksoul-git.github.io/images/logo.png",
+      "sameAs": [
+        "https://codepen.io/DarkSoul-/",
+        "https://dribbble.com/DarkSoulinDribble/"
+      ]
+    }
+    </script>
   
 <style>
-  h2, h3{
-    font-family: 'Ubuntu', sans-serif;
-    
-}
-
-        .content{
-          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-			font-family: "Work Sans", sans-serif !important;
+  @font-face 
+		{
+			font-family: "icomoon";
+        	src: url("https://darksoul-git.github.io/fonts/icomoon/fonts/icomoon.ttf?");
+  			font-display: swap;
+		}
+        h2, h3
+        {
+            font-family: 'Ubuntu', sans-serif;
+        }
+        .content
+        {
+			      font-family: "Work Sans", sans-serif !important;
             text-align: justify; 
             color: black;
             line-height: 1.6;
         }
+        .content h3, .content h2
+        {
+          font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        h4
+		{
+			font-weight: bolder !important;
+			color: white !important;
+          	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;	
+		}
         .date{ color: black !important;}
         .blog-entry{color: black !important;}
-     
 </style>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-015RX6GMQJ"></script>
@@ -78,13 +106,13 @@
     <div class="site-mobile-menu-body"></div>
   </div>
 
-	<nav class="site-nav bg-dark">
+  <nav class="site-nav bg-dark">
 		<div class="container">
 			<div class="menu-bg-wrap">
 				<div class="site-navigation">
 					<div class="row g-0 align-items-center">
 						<div class="col-2">
-							<a href="https://darksoul-git.github.io/" class="logo m-0 float-start">DarkSoul<span>.</span></a>
+							<a href="https://darksoul-git.github.io/" class="logo m-0 float-start"><img src="images/logo.png" width="55" height="55" alt="DarkSoul"/></a>
 						</div>
 						<div class="col-8 text-center">
 							
@@ -95,10 +123,10 @@
 								<li><a href="about.html">About</a></li>
 								<li><a href="contact.html">Contact</a></li>
 								<li class="has-children">
-									<a>Blogs</a>
+									<a href="blogs.html">Blogs</a>
 									<ul class="dropdown">
 										<li><a href="category.html">Tech Blogs</a></li>
-                    <li><a href="category-travel.html">Travel</a></li>
+										<li><a href="category-travel.html">Travel</a></li>
 									</ul>
 								</li>
 								<li><a href="privacy.html">Privacy</a></li>
@@ -143,7 +171,7 @@
 
           <div class="post-content-body content">
             <div class="col-md-12 mb-4" style="display: flex;">
-              <img src="images/Best 5 Chilling Places in Kerala.png" alt="Best 5 Chilling Places in Kerala - cover image" class="img-fluid rounded justify-content-center" style="margin: auto;">
+              <img src="images/Best 5 Chilling Places in Kerala.avif" alt="Best 5 Chilling Places in Kerala - cover image" class="img-fluid rounded justify-content-center" style="margin: auto;">
             </div>
             <h2>Best 5 Chilling Places in Kerala</h2>
             <p>Hey there, fellow wanderers! Ready for a virtual tour of Kerala's most chillaxed spots? Kerala, the ultimate "God's Own Country" tagline holder, is all about stunning landscapes and cultural vibes. So, buckle up as we dive into the top five places where you can kick back, relax, and let the good times roll.
@@ -241,7 +269,7 @@
         <div class="col-md-6 col-lg-3">
           <div class="blog-entry">
             <a href="Blog2.html" class="img-link">
-              <img src="images/Where do I learn about Blockchain.png" alt="Where do I learn about Blockchain" class="img-fluid">
+              <img src="images/Where do I learn about Blockchain.avif" alt="Where do I learn about Blockchain" class="img-fluid">
             </a>
             <span class="date">Aug. 23rd, 2023</span>
             <h2><a href="Blog2.html">Where do I learn about Blockchain?</a></h2>
@@ -254,7 +282,7 @@
         <div class="col-md-6 col-lg-3">
           <div class="blog-entry">
             <a href="Blog3.html" class="img-link">
-              <img src="images/How Blockchain affects Share market.png" alt="How Blockchain affects Share market" class="img-fluid">
+              <img src="images/How Blockchain affects Share market.avif" alt="How Blockchain affects Share market" class="img-fluid">
             </a>
             <span class="date">Sept. 2nd, 2023</span>
             <h2><a href="Blog3.html">How Blockchain affects Share market?</a></h2>
@@ -267,7 +295,7 @@
         <div class="col-md-6 col-lg-3">
             <div class="blog-entry">
               <a href="What-are-the-uses-of-blockchain.html" class="img-link">
-                <img src="images/What are the uses of blockchain.png" alt="What are the uses of blockchain?" class="img-fluid">
+                <img src="images/What are the uses of blockchain.avif" alt="What are the uses of blockchain?" class="img-fluid">
               </a>
               <span class="date">Sept. 15th, 2023</span>
               <h2><a href="What-are-the-uses-of-blockchain.html">What are the uses of blockchain?</a></h2>
@@ -280,7 +308,7 @@
           <div class="col-md-6 col-lg-3">
             <div class="blog-entry">
               <a href="What-are-the-applications-of-blockchain.html" class="img-link">
-                <img src="images/What are the applications of blockchain.png" alt="What are the applications of blockchain" class="img-fluid">
+                <img src="images/What are the applications of blockchain.avif" alt="What are the applications of blockchain" class="img-fluid">
               </a>
               <span class="date">Sept. 27th, 2023</span>
               <h2><a href="What-are-the-applications-of-blockchain.html">What are the applications of blockchain?</a></h2>
@@ -295,7 +323,7 @@
   </section>
 
 
-  <footer class="site-footer bg-dark">
+	<footer class="site-footer bg-dark">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-4">
@@ -329,26 +357,26 @@
 							<ul>
 		
                 <li>
-									<a href="What-are-the-applications-of-blockchain.html">
+									<a href="Best-5-Adventure-Places-in-Ladakh.html">
 										
-										<img src="images/What are the applications of blockchain.png" alt="What are the applications of blockchain - cover image" class="me-4 rounded">
+										<img src="images/Best 5 Adventure Places in Ladakh.avif" alt="Best 5 Adventure Places in Ladakh - cover image" class="me-4 rounded">
 										<div class="text">
-											<h4>What are the applications of blockchain?</h4>
+											<h4>Best 5 Adventure Places in Ladakh</h4>
 											<div class="post-meta">
-												<span class="mr-2">September 27, 2023 </span>
+												<span class="mr-2">December 04, 2023 </span>
 											</div>
 										</div>
 									</a>
 								</li>
 
                 <li>
-									<a href="Define-cryptocurrency-and-how-it-works.html">
+									<a href="Best-5-Chilling-Places-in-Kerala.html">
 										
-										<img src="images/Define Cryptocurrency and how it works.png" alt="Define Cryptocurrency and how it works - cover image" class="me-4 rounded">
+										<img src="images/Best 5 Chilling Places in Kerala.avif" alt="Best 5 Chilling Places in Kerala - cover image" class="me-4 rounded">
 										<div class="text">
-											<h4>Define Cryptocurrency and how it works?</h4>
+											<h4>Best 5 Chilling Places in Kerala</h4>
 											<div class="post-meta">
-												<span class="mr-2">October 10, 2023 </span>
+												<span class="mr-2">November 26, 2023 </span>
 											</div>
 										</div>
 									</a>
@@ -366,7 +394,7 @@
 			<div class="row mt-5">
 				<div class="col-12 text-center">
     
-            <p>&copy;<script>document.write(new Date().getFullYear());</script> DarkSoul | <a href="disclaimer.html">Disclaimer</a> |  <a href="termsandconditions.html">Terms & Conditions</a> | <a href="#"
+            <p>&copy;2024 DarkSoul | <a href="disclaimer.html">Disclaimer</a> |  <a href="termsandconditions.html">Terms & Conditions</a> | <a href="#"
       onclick="window.displayPreferenceModal();return false;"
       id="termly-consent-preferences">Consent Preferences</a> &mdash; Created with ♥ by <a href="#">DarkSoul.</a></p>
           </div>
@@ -384,7 +412,7 @@
 
 
     <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/tiny-slider.js"></script>
+   
 
     <script src="js/flatpickr.min.js"></script>
 
