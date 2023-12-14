@@ -8,207 +8,221 @@
 
 <url>
   <loc>https://darksoul-git.github.io/</loc>
-  <lastmod>2023-12-04T05:38:36+00:00</lastmod>
-   <image:image>
-      <image:loc>https://darksoul-git.github.io/images/What%20is%20a%20Blockchain.avif</image:loc>
+  <lastmod>2023-12-14T16:17:00+00:00</lastmod>
+    <image:image>
+      <image:loc>https://darksoul-git.github.io/images/What%20is%20a%20Blockchain.png</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://darksoul-git.github.io/images/Where%20do%20I%20learn%20about%20Blockchain.avif</image:loc>
+      <image:loc>https://darksoul-git.github.io/images/Where%20do%20I%20learn%20about%20Blockchain.png</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://darksoul-git.github.io/images/How%20Blockchain%20affects%20Share%20market.avif</image:loc>
+      <image:loc>https://darksoul-git.github.io/images/How%20Blockchain%20affects%20Share%20market.png</image:loc>
     </image:image>
      <image:image>
-      <image:loc>https://darksoul-git.github.io/images/What%20are%20the%20uses%20of%20blockchain.avif</image:loc>
+      <image:loc>https://darksoul-git.github.io/images/What%20are%20the%20uses%20of%20blockchain.png</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://darksoul-git.github.io/images/What%20are%20the%20applications%20of%20blockchain.avif</image:loc>
+      <image:loc>https://darksoul-git.github.io/images/What%20are%20the%20applications%20of%20blockchain.png</image:loc>
     </image:image>
      <image:image>
-      <image:loc>https://darksoul-git.github.io/images/Define%20Cryptocurrency%20and%20how%20it%20works.avif</image:loc>
+      <image:loc>https://darksoul-git.github.io/images/Define%20Cryptocurrency%20and%20how%20it%20works.png</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://darksoul-git.github.io/images/Best%205%20places%20to%20Hangout.avif</image:loc>
+      <image:loc>https://darksoul-git.github.io/images/Best-5-places-to-Hangout.webp</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://darksoul-git.github.io/images/Best%205%20attractive%20places%20to%20visit%20in%20Paris.avif</image:loc>
+      <image:loc>https://darksoul-git.github.io/images/Best%205%20attractive%20places%20to%20visit%20in%20Paris.png</image:loc>
     </image:image> 
       <image:image>
-      <image:loc>https://darksoul-git.github.io/images/Best%205%20amazing%20places%20to%20visit%20in%20Taiwan.avif</image:loc>
+      <image:loc>https://darksoul-git.github.io/images/Best-5-amazing-places-to-visit-in-Taiwan.webp</image:loc>
     </image:image> 
      <image:image>
-      <image:loc>https://darksoul-git.github.io/images/Best%205%20Chilling%20Places%20in%20Kerala.avif</image:loc>
+      <image:loc>https://darksoul-git.github.io/images/Best-5-Chilling-Places-in-Kerala.webp</image:loc>
     </image:image> 
     <image:image>
-      <image:loc>https://darksoul-git.github.io/images/Best%205%20Adventure%20Places%20in%20Ladakh.avif</image:loc>
+      <image:loc>https://darksoul-git.github.io/images/Best-5-Adventure-Places-in-Ladakh.webp</image:loc>
+    </image:image> 
+    <image:image>
+      <image:loc>https://darksoul-git.github.io/images/Best%205%20Relaxing%20and%20Peaceful%20Places%20in%20Luxembourg.webp</image:loc>
     </image:image> 
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://darksoul-git.github.io/about.html</loc>
-  <lastmod>2023-12-04T05:38:36+00:00</lastmod>
+  <lastmod>2023-12-14T16:17:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://darksoul-git.github.io/contact.html</loc>
-  <lastmod>2023-12-04T05:38:36+00:00</lastmod>
+  <lastmod>2023-12-14T16:17:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://darksoul-git.github.io/blogs.html</loc>
-  <lastmod>2023-12-04T05:38:36+00:00</lastmod>
-  <image:image>
-      <image:loc>https://darksoul-git.github.io/images/Tech%20Blogs.avif</image:loc>
+  <lastmod>2023-12-14T16:17:00+00:00</lastmod>
+   <image:image>
+      <image:loc>https://darksoul-git.github.io/images/Tech-Blogs.webp</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://darksoul-git.github.io/images/Travel%20Blogs.avif</image:loc>
+      <image:loc>https://darksoul-git.github.io/images/Travel-Blogs.webp</image:loc>
     </image:image>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://darksoul-git.github.io/category.html</loc>
-  <lastmod>2023-12-04T05:38:36+00:00</lastmod>
+  <lastmod>2023-12-14T16:17:00+00:00</lastmod>
    <image:image>
-      <image:loc>https://darksoul-git.github.io/images/What%20is%20a%20Blockchain.avif</image:loc>
+      <image:loc>https://darksoul-git.github.io/images/What%20is%20a%20Blockchain.png</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://darksoul-git.github.io/images/Where%20do%20I%20learn%20about%20Blockchain.avif</image:loc>
+      <image:loc>https://darksoul-git.github.io/images/Where%20do%20I%20learn%20about%20Blockchain.png</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://darksoul-git.github.io/images/How%20Blockchain%20affects%20Share%20market.avif</image:loc>
+      <image:loc>https://darksoul-git.github.io/images/How%20Blockchain%20affects%20Share%20market.png</image:loc>
     </image:image>
      <image:image>
-      <image:loc>https://darksoul-git.github.io/images/What%20are%20the%20uses%20of%20blockchain.avif</image:loc>
+      <image:loc>https://darksoul-git.github.io/images/What%20are%20the%20uses%20of%20blockchain.png</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://darksoul-git.github.io/images/What%20are%20the%20applications%20of%20blockchain.avif</image:loc>
+      <image:loc>https://darksoul-git.github.io/images/What%20are%20the%20applications%20of%20blockchain.png</image:loc>
     </image:image>
      <image:image>
-      <image:loc>https://darksoul-git.github.io/images/Define%20Cryptocurrency%20and%20how%20it%20works.avif</image:loc>
+      <image:loc>https://darksoul-git.github.io/images/Define%20Cryptocurrency%20and%20how%20it%20works.png</image:loc>
     </image:image>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://darksoul-git.github.io/category-travel.html</loc>
-  <lastmod>2023-12-04T05:38:36+00:00</lastmod>
-     <image:image>
-      <image:loc>https://darksoul-git.github.io/images/Best%205%20places%20to%20Hangout.avif</image:loc>
+  <lastmod>2023-12-14T16:17:00+00:00</lastmod>
+    <image:image>
+      <image:loc>https://darksoul-git.github.io/images/Best-5-places-to-Hangout.webp</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://darksoul-git.github.io/images/Best%205%20attractive%20places%20to%20visit%20in%20Paris.avif</image:loc>
+      <image:loc>https://darksoul-git.github.io/images/Best%205%20attractive%20places%20to%20visit%20in%20Paris.png</image:loc>
     </image:image> 
       <image:image>
-      <image:loc>https://darksoul-git.github.io/images/Best%205%20amazing%20places%20to%20visit%20in%20Taiwan.avif</image:loc>
+      <image:loc>https://darksoul-git.github.io/images/Best-5-amazing-places-to-visit-in-Taiwan.webp</image:loc>
     </image:image> 
      <image:image>
-      <image:loc>https://darksoul-git.github.io/images/Best%205%20Chilling%20Places%20in%20Kerala.avif</image:loc>
+      <image:loc>https://darksoul-git.github.io/images/Best-5-Chilling-Places-in-Kerala.webp</image:loc>
     </image:image> 
     <image:image>
-      <image:loc>https://darksoul-git.github.io/images/Best%205%20Adventure%20Places%20in%20Ladakh.avif</image:loc>
+      <image:loc>https://darksoul-git.github.io/images/Best-5-Adventure-Places-in-Ladakh.webp</image:loc>
+    </image:image> 
+    <image:image>
+      <image:loc>https://darksoul-git.github.io/images/Best%205%20Relaxing%20and%20Peaceful%20Places%20in%20Luxembourg.webp</image:loc>
     </image:image> 
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://darksoul-git.github.io/privacy.html</loc>
-  <lastmod>2023-12-04T05:38:36+00:00</lastmod>
+  <lastmod>2023-12-14T16:17:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://darksoul-git.github.io/Best-5-Relaxing-and-Peaceful-Places-in-Luxembourg.html</loc>
+  <lastmod>2023-12-14T16:17:00+00:00</lastmod>
+   <image:image>
+      <image:loc>https://darksoul-git.github.io/images/Best%205%20Relaxing%20and%20Peaceful%20Places%20in%20Luxembourg.webp</image:loc>
+    </image:image> 
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://darksoul-git.github.io/Best-5-Adventure-Places-in-Ladakh.html</loc>
-  <lastmod>2023-12-04T05:38:36+00:00</lastmod>
+  <lastmod>2023-12-14T16:17:00+00:00</lastmod>
    <image:image>
-      <image:loc>https://darksoul-git.github.io/images/Best%205%20Adventure%20Places%20in%20Ladakh.avif</image:loc>
+      <image:loc>https://darksoul-git.github.io/images/Best-5-Adventure-Places-in-Ladakh.webp</image:loc>
     </image:image> 
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://darksoul-git.github.io/Best-5-Chilling-Places-in-Kerala.html</loc>
-  <lastmod>2023-12-04T05:38:36+00:00</lastmod>
-    <image:image>
-      <image:loc>https://darksoul-git.github.io/images/Best%205%20Chilling%20Places%20in%20Kerala.avif</image:loc>
+  <lastmod>2023-12-14T16:17:00+00:00</lastmod>
+   <image:image>
+      <image:loc>https://darksoul-git.github.io/images/Best-5-Chilling-Places-in-Kerala.webp</image:loc>
     </image:image> 
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://darksoul-git.github.io/Blog3.html</loc>
-  <lastmod>2023-12-04T05:38:36+00:00</lastmod>
-    <image:image>
-      <image:loc>https://darksoul-git.github.io/images/How%20Blockchain%20affects%20Share%20market.avif</image:loc>
-    </image:image>
-  <priority>0.80</priority>
-</url>
-<url>
   <loc>https://darksoul-git.github.io/What-are-the-uses-of-blockchain.html</loc>
-  <lastmod>2023-12-04T05:38:36+00:00</lastmod>
-    <image:image>
-      <image:loc>https://darksoul-git.github.io/images/What%20are%20the%20uses%20of%20blockchain.avif</image:loc>
+  <lastmod>2023-12-14T16:17:00+00:00</lastmod>
+   <image:image>
+      <image:loc>https://darksoul-git.github.io/images/What%20are%20the%20uses%20of%20blockchain.png</image:loc>
     </image:image>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://darksoul-git.github.io/What-are-the-applications-of-blockchain.html</loc>
-  <lastmod>2023-12-04T05:38:36+00:00</lastmod>
+  <lastmod>2023-12-14T16:17:00+00:00</lastmod>
     <image:image>
-      <image:loc>https://darksoul-git.github.io/images/What%20are%20the%20applications%20of%20blockchain.avif</image:loc>
+      <image:loc>https://darksoul-git.github.io/images/What%20are%20the%20applications%20of%20blockchain.png</image:loc>
     </image:image>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://darksoul-git.github.io/Define-cryptocurrency-and-how-it-works.html</loc>
-  <lastmod>2023-12-04T05:38:36+00:00</lastmod>
-    <image:image>
-      <image:loc>https://darksoul-git.github.io/images/Define%20Cryptocurrency%20and%20how%20it%20works.avif</image:loc>
+  <lastmod>2023-12-14T16:17:00+00:00</lastmod>
+   <image:image>
+      <image:loc>https://darksoul-git.github.io/images/Define%20Cryptocurrency%20and%20how%20it%20works.png</image:loc>
     </image:image>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://darksoul-git.github.io/Best-5-places-to-Hangout.html</loc>
-  <lastmod>2023-12-04T05:38:36+00:00</lastmod>
-    <image:image>
-      <image:loc>https://darksoul-git.github.io/images/Best%205%20places%20to%20Hangout.avif</image:loc>
+  <lastmod>2023-12-14T16:17:00+00:00</lastmod>
+  <image:image>
+      <image:loc>https://darksoul-git.github.io/images/Best-5-places-to-Hangout.webp</image:loc>
     </image:image>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://darksoul-git.github.io/Best-5-attractive-places-to-visit-in-Paris.html</loc>
-  <lastmod>2023-12-04T05:38:36+00:00</lastmod>
-      <image:image>
-      <image:loc>https://darksoul-git.github.io/images/Best%205%20attractive%20places%20to%20visit%20in%20Paris.avif</image:loc>
+  <lastmod>2023-12-14T16:17:00+00:00</lastmod>
+   <image:image>
+      <image:loc>https://darksoul-git.github.io/images/Best%205%20attractive%20places%20to%20visit%20in%20Paris.png</image:loc>
     </image:image> 
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://darksoul-git.github.io/Best-5-amazing-places-to-visit-in-Taiwan.html</loc>
-  <lastmod>2023-12-04T05:38:36+00:00</lastmod>
-     <image:image>
-      <image:loc>https://darksoul-git.github.io/images/Best%205%20amazing%20places%20to%20visit%20in%20Taiwan.avif</image:loc>
+  <lastmod>2023-12-14T16:17:00+00:00</lastmod>
+   <image:image>
+      <image:loc>https://darksoul-git.github.io/images/Best-5-amazing-places-to-visit-in-Taiwan.webp</image:loc>
     </image:image> 
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://darksoul-git.github.io/Blog2.html</loc>
-  <lastmod>2023-12-04T05:38:36+00:00</lastmod>
+  <lastmod>2023-12-14T16:17:00+00:00</lastmod>
     <image:image>
-      <image:loc>https://darksoul-git.github.io/images/Where%20do%20I%20learn%20about%20Blockchain.avif</image:loc>
+      <image:loc>https://darksoul-git.github.io/images/Where%20do%20I%20learn%20about%20Blockchain.png</image:loc>
     </image:image>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://darksoul-git.github.io/Blog1.html</loc>
-  <lastmod>2023-12-04T05:38:36+00:00</lastmod>
-     <image:image>
-      <image:loc>https://darksoul-git.github.io/images/What%20is%20a%20Blockchain.avif</image:loc>
+  <lastmod>2023-12-14T16:17:00+00:00</lastmod>
+   <image:image>
+      <image:loc>https://darksoul-git.github.io/images/What%20is%20a%20Blockchain.png</image:loc>
+    </image:image>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://darksoul-git.github.io/Blog3.html</loc>
+  <lastmod>2023-12-14T16:17:00+00:00</lastmod>
+  <image:image>
+      <image:loc>https://darksoul-git.github.io/images/How%20Blockchain%20affects%20Share%20market.png</image:loc>
     </image:image>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://darksoul-git.github.io/disclaimer.html</loc>
-  <lastmod>2023-12-04T05:38:36+00:00</lastmod>
+  <lastmod>2023-12-14T16:17:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://darksoul-git.github.io/termsandconditions.html</loc>
-  <lastmod>2023-12-04T05:38:36+00:00</lastmod>
+  <lastmod>2023-12-14T16:17:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 
