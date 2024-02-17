@@ -106,59 +106,14 @@
 </head>
 <body>
 
-	<div class="site-mobile-menu site-navbar-target">
-		<div class="site-mobile-menu-header">
-			<div class="site-mobile-menu-close">
-				<span class="icofont-close js-menu-toggle"></span>
-			</div>
-		</div>
-		<div class="site-mobile-menu-body"></div>
-	</div>
-
-	<nav class="site-nav bg-dark">
-		<div class="container">
-			<div class="menu-bg-wrap">
-				<div class="site-navigation">
-					<div class="row g-0 align-items-center">
-						<div class="col-2">
-							<a href="https://darksoul-git.github.io/" class="logo m-0 float-start"><img src="images/logo.png" width="55" height="55" alt="DarkSoul"/></a>
-						</div>
-						<div class="col-8 text-center">
-							
-
-							<ul class="js-clone-nav d-none d-lg-inline-block text-start site-menu mx-auto">
-								<li class="active"><a href="https://darksoul-git.github.io/">Home</a></li>
-								
-								<li><a href="about.html">About</a></li>
-								<li><a href="contact.html">Contact</a></li>
-								<li class="has-children">
-									<a href="blogs.html">Blogs</a>
-									<ul class="dropdown">
-										<li><a href="category.html">Tech Blogs</a></li>
-										<li><a href="category-travel.html">Travel</a></li>
-									</ul>
-								</li>
-								<li class="has-children">
-									<a href="designs.html">Designs</a>
-									<ul class="dropdown">
-										<li><a href="3d-models.html">3D Models</a></li>
-									</ul>
-								</li>
-								<li><a href="privacy.html">Privacy</a></li>
-
-							</ul>
-						</div>
-						<div class="col-2 text-end">
-							<a href="#" class="burger ms-auto float-end site-menu-toggle js-menu-toggle d-inline-block d-lg-none light">
-								<span></span>
-							</a>
-							
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</nav>
+ <!-- Mobile Navigation Bar -->
+ <div class="site-mobile-menu site-navbar-target" id="mobilenav">
+      
+ </div>
+ <!-- Desktop Navigation Bar -->
+ <nav class="site-nav bg-dark" id="header">
+	 
+ </nav>
 
 	<div class="section search-result-wrap">
 		<div class="container">
@@ -351,89 +306,11 @@
 	</div>
 
 
-	<footer class="site-footer bg-dark">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-4">
-					<div class="widget">
-						<h3 class="mb-4">About</h3>
-						<p>DarkSoul, your number-one source for all things. Dedicated to giving you the very best of blogs with an emphasis on technical, travel, and lifestyle.</p>
-					</div> <!-- /.widget -->
-					
-				</div> <!-- /.col-lg-4 -->
-				<div class="col-lg-4 ps-lg-5">
-					<div class="widget">
-					
-                        
-						<ul class="list-unstyled float-start links">
-							<li><a href="about.html">About</a></li>
-							<li><a href="contact.html">Contact</a></li>
-							<li><a href="privacy.html">Privacy</a></li>
-							
-						</ul>
-						<ul class="list-unstyled float-start links">
-							<h3>Blogs</h3>
-							<li><a href="category.html">Tech Blogs</a></li>
-							<li><a href="category-travel.html">Travel</a></li>
-							
-						</ul>
-						<ul class="list-unstyled float-start links">
-							<h3>Designs</h3>
-							<li><a href="3d-models.html">3D Models</a></li>
-							
-						</ul>
-						
-					</div> <!-- /.widget -->
-				</div> <!-- /.col-lg-4 -->
-				<div class="col-lg-4">
-					<div class="widget">
-						<h3 class="mb-4">Recent Post Entry</h3>
-						<div class="post-entry-footer">
-							<ul>
+
+ <!-- /.site-footer -->
+ <footer class="site-footer bg-dark" id="footer">
 		
-                <li>
-									<a href="Best-5-Adventure-Places-in-Ladakh.html">
-										
-										<img src="images/Best-5-Adventure-Places-in-Ladakh.webp" alt="Best 5 Adventure Places in Ladakh - cover image" class="me-4 rounded">
-										<div class="text">
-											<h4>Best 5 Adventure Places in Ladakh</h4>
-											<div class="post-meta">
-												<span class="mr-2">December 04, 2023 </span>
-											</div>
-										</div>
-									</a>
-								</li>
-
-                <li>
-									<a href="Best-5-Chilling-Places-in-Kerala.html">
-										
-										<img src="images/Best-5-Chilling-Places-in-Kerala.webp" alt="Best 5 Chilling Places in Kerala - cover image" class="me-4 rounded">
-										<div class="text">
-											<h4>Best 5 Chilling Places in Kerala</h4>
-											<div class="post-meta">
-												<span class="mr-2">November 26, 2023 </span>
-											</div>
-										</div>
-									</a>
-								</li>
-									
-								
-							</ul>
-						</div>
-
-
-					</div> <!-- /.widget -->
-				</div> <!-- /.col-lg-4 -->
-			</div> <!-- /.row -->
-
-			<div class="row mt-5">
-				<div class="col-12 text-center">
-    
-            <p>&copy;2024 DarkSoul | <a href="disclaimer.html">Disclaimer</a> |  <a href="termsandconditions.html">Terms & Conditions</a> &mdash; Created with ♥ by <a href="#">DarkSoul.</a></p>
-          </div>
-        </div>
-      </div> <!-- /.container -->
-    </footer> <!-- /.site-footer -->
+ </footer>
 
 	
     <!-- Preloader -->
@@ -444,7 +321,8 @@
     	</div>
     </div>
 
-
+	<script async src="js/header.js"></script>
+    <script async src="js/footer.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
    
 
