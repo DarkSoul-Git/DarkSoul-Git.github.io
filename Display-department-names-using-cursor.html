@@ -1,0 +1,382 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="author" content="DarkSoul">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <meta name="description" content="Discover the power of PL/SQL cursors for fetching department names with ease on DarkSoul. Elevate your database querying skills as you navigate through our user-friendly interface, simplifying your journey to effective data retrieval and management." />
+  <meta name="keywords" content="Display department names using cursors, Display department names using cursors in PL/SQL, solution to Display department names using cursors in plsql, DarkSoul, PL/SQL, DarkSoul plsql" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="fonts/icomoon/style.css">
+  <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+  <link rel="stylesheet" href="css/aos.css">
+  <link rel="stylesheet" href="css/glightbox.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <link rel="stylesheet" href="css/flatpickr.min.css">
+
+
+  <title>Display department names using cursor - DarkSoul</title>
+ 
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Organization",
+      "url": "https://darksoul-git.github.io/",
+      "name": "DarkSoul - Best UI/UX Designs and blogs for better understanding",
+      "description": "DarkSoul, your number-one source for all things. We're dedicated to giving you the very best of designs and blogs with an emphasis on technical, graphical, and logical",
+      "logo": "https://darksoul-git.github.io/images/logo.png",
+      "sameAs": [
+        "https://codepen.io/DarkSoul-/",
+        "https://dribbble.com/DarkSoulinDribble/"
+      ]
+    }
+    </script>
+  
+<style>
+  @font-face 
+		{
+			font-family: "icomoon";
+        	src: url("https://darksoul-git.github.io/fonts/icomoon/fonts/icomoon.ttf?");
+  			font-display: swap;
+		}
+  h2, h3{
+    font-family: 'Ubuntu', sans-serif;
+    
+}
+
+.content
+        {
+			      font-family: "Work Sans", sans-serif !important;
+            text-align: justify; 
+            color: black;
+            line-height: 1.6;
+        }
+        .content h3, .content h2
+        {
+          font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        h4
+		{
+			font-weight: bolder !important;
+			color: white !important;
+          	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;	
+		}
+        .date{ color: black !important;}
+        .blog-entry{color: black !important;}
+     
+        textarea
+  {
+    margin-top: 55px;
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    resize: none;
+    font-size: large;
+    min-height: 400px;
+    width: 700px;
+    background-color: rgb(255, 255, 255);
+    border: 0.1px solid rgb(210, 210, 210);
+    border-radius: 8px;
+    box-shadow: 0px 0px 50px rgb(230, 230, 230);
+  	font-weight: 500;
+    color: rgb(0, 0, 0);
+  }
+      /* width */
+      ::-webkit-scrollbar 
+        {
+            width: 5px;
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track 
+        {
+            background-color: rgba(226, 247, 255, 0);
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb 
+        {
+        background: #adadad;
+        border-radius: 10px;
+        height: 10px;
+        width: 3px;
+        }
+
+        ::selection
+        {
+            background-color: #202020;
+            color: white;
+        }
+</style>
+<script type="text/javascript">
+  (function(c,l,a,r,i,t,y){
+    c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+    t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+    y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+  })(window, document, "clarity", "script", "iir3jmgyug");
+</script>
+	<!-- Google tag (gtag.js)-->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-015RX6GMQJ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  
+    gtag('config', 'G-015RX6GMQJ');
+  </script> 
+</head>
+<body>
+
+  <!-- Mobile Navigation Bar -->
+  <div class="site-mobile-menu site-navbar-target" id="mobilenav">
+      
+  </div>
+  <!-- Desktop Navigation Bar -->
+  <nav class="site-nav bg-dark" id="header">
+  
+  </nav>
+
+  <div class="site-cover site-cover-sm same-height overlay single-page bg-dark">
+    <div class="container">
+      <div class="row same-height justify-content-center">
+        <div class="col-md-6" > 
+          <div class="post-entry text-left" >
+            <h1 class="mb-4" style="font-weight: 800;">Display Department Names Using Cursors</h1>
+            <div class="post-meta align-items-center text-left">
+              <figure class="author-figure mb-0 me-3 d-inline-block"><img src="favicon.ico" alt="Image" class="img-fluid"  width="640" height="360"></figure>
+              <span class="d-inline-block mt-1">By DarkSoul</span>
+              <span>&nbsp;-&nbsp; April 11, 2024</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container">
+
+      <div class="row blog-entries element-animate">
+
+        <div class="main-content">
+
+          <div class="post-content-body content">
+            <div class="col-md-12 mb-4" style="display: flex;">
+              <img src="images/Display department names using cursor.webp" alt="Display department names using cursor - cover image" class="img-fluid rounded justify-content-center" style="margin: auto;">
+            </div>
+            <p>Create a PL/SQL block to display all the department names from the Department table using cursors.</p>
+            <table class="table table-hover table-dark table-striped mt-4 mb-4" style="max-width: 400px;">
+              <thead>
+                <tr>
+                  <th>COLUMN</th>
+                  <th>DATATYPE</th>
+                  <th>CONS.</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>DEPARTMENT_ID</td>
+                  <td>NUMBER(5)</td>
+                  <td>PK</td>
+                </tr>
+                <tr>
+                    <td>DEPARTMENT_NAME</td>
+                    <td>VARCHAR2(25)</td>
+                    <td>NOT NULL</td>
+                  </tr>
+                <tr>
+                  <td>LOCATION_ID</td>
+                  <td>VARCHAR2(15)</td>
+                  <td></td>
+                </tr>
+               
+              </tbody>
+            </table>
+
+            <h3>Sample Output: </h3>
+            <pre> 
+Department Names are:
+ADMIN
+DEVELOPMENT
+            </pre>
+
+              <strong>(Note: Data is case sensitive. Use '/'' at the end to terminate the PL/SQL block)</strong>
+      
+            <div class="col-md-12 mb-4" style="display: flex;">
+             
+               <textarea disabled id="plsql">
+
+    SET SERVEROUTPUT ON;
+    DECLARE
+        dname Department.DEPARTMENT_NAME%type;
+        CURSOR Dept IS SELECT DEPARTMENT_NAME FROM Department 
+                            ORDER BY DEPARTMENT_NAME;
+    BEGIN
+        DBMS_OUTPUT.PUT_LINE('Department Names are :');
+        OPEN Dept;
+        LOOP
+            FETCH Dept INTO dname;
+            EXIT WHEN Dept%NOTFOUND;
+            dbms_output.put_line(dname);
+        END LOOP;
+        CLOSE Dept;
+    END;
+    /
+                
+                
+
+                  </textarea>
+               
+                  </div>
+                  <div class="col-md-12 mb-4" style="display: flex;">
+          
+                  <button id="button" class="btn btn-outline-dark m-auto" style="width: fit-content; height: fit-content;" onclick="copy()">Copy</button>
+            </div>
+                  <script>
+                    var textarea = document.getElementById('plsql');
+                    var button = document.getElementById('button');
+                      function copy() {
+            textarea.select();
+            navigator.clipboard.writeText(textarea.value);
+            button.innerHTML = 'COPIED!';
+        }
+                  </script>
+
+                  <p>
+                    This PL/SQL block essentially fetches department names from the Department table and displays them one by one. </p>
+      
+           
+                  <p>
+                    <b>Enable Output:</b> The first line <b>SET SERVEROUTPUT ON;</b> is not actually a part of PL/SQL; it's a SQLPlus command. It just ensures that the output will be displayed in SQLPlus.
+                  </p>
+              
+                  <p><b>DECLARE: </b> The DECLARE keyword is used to declare variables that are used in the PL/SQL block.
+                    <ul>
+                        <li><b>dname</b> is declared to hold the name of each department.</li>
+                        <li>CURSOR <b>Dept</b> is declared to fetch department names from the Department table, ordered alphabetically.</li>
+                    </ul>
+                  </p>
+                
+                  <p><b>BEGIN:</b>
+                   BEGIN marks the beginning of the PL/SQL block where the actual logic resides. </p>
+                 
+                  <p><b>DBMS_OUTPUT.PUT_LINE('Department Names are :') -</b> This output statement outputs a message indicating that department names will be displayed.  </p>
+                  
+                  <p><b>
+                    CURSOR Operations:
+                    </b>
+                    <ul>
+                        <li><b>OPEN Dept -</b> This opens the cursor Dept, allowing it to fetch rows.</li>
+                        <li><b>LOOP -</b> marks the beginning of a loop that will iterate over each row fetched by the cursor until there are no more rows.</li>
+                        <li><b>FETCH Dept INTO dname -</b> retrieves the department name from the cursor and stores it in the dname variable.</li>
+                        <li><b>EXIT WHEN Dept%NOTFOUND -</b> This exits the loop when there are no more rows to fetch.</li>
+                        <li><b>DBMS_OUTPUT.PUT_LINE(dname) -</b> This line outputs the department name retrieved from the cursor.</li>
+                        <li><b>END LOOP -</b> marks the end of the loop.</li>
+                        <li><b>CLOSE Dept -</b> This closes the cursor once all rows have been fetched.</li>
+                    </ul>
+                  </p>
+                
+                  <p><b>END:</b>
+                    Marks the end of the PL/SQL block.
+                  </p>
+                 
+                 
+                
+          
+          <div class="pt-5">
+            <p>Categories:  <a href="category-pl-sql.html">PL/SQL Hands-on</a>  Tags: <a href="#">#Display Department names using cursor</a>, <a href="#">#PL/SQL</a></p>
+          </div>
+
+
+
+            <div class="comment-form-wrap pt-5">
+              <h3 class="mb-5" style="color: black;">Leave a comment</h3>
+              <form action="https://docs.google.com/forms/d/e/1FAIpQLSfy_pkp3cVBSPDNpS27p2F_zKnwC6O1dNXrFTscjn_XxITQ-w/formResponse" class="p-5 bg-light">
+                <div class="form-group">
+                  <label for="name">Name</label>
+                  <input type="text" class="form-control" id="name" name="entry.505217379" required autocomplete="on">
+                </div>
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" class="form-control" id="email" name="entry.1718450961" required autocomplete="on">
+                </div>
+                <div class="form-group">
+                  <label for="subject">Subject</label>
+                  <input type="text" class="form-control" id="subject" name="entry.390459327" required autocomplete="on">
+                </div>
+
+                <div class="form-group">
+                  <label for="message">Message</label>
+                  <textarea name="entry.117980495" id="message" cols="30" rows="10" class="form-control" required autocomplete="on"></textarea>
+                </div>
+                <div class="form-group">
+                  <input type="submit" value="Post Comment" class="btn btn-outline-dark">
+                </div>
+
+              </form>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- END main-content -->
+
+        
+ 
+
+      </div>
+    </div>
+  </section>
+
+
+ 
+
+
+
+ <!-- /.site-footer -->
+ <footer class="site-footer bg-dark" id="footer">
+		
+ </footer>
+
+    <!-- Preloader -->
+    <div id="overlayer"></div>
+    <div class="loader">
+      <div class="spinner-border text-primary" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+    </div>
+    <script async src="js/header.js"></script>
+    <script async src="js/footer.js"></script>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+   
+
+    <script src="js/flatpickr.min.js"></script>
+
+
+    <script src="js/aos.js"></script>
+    <script src="js/glightbox.min.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/counter.js"></script>
+    <script src="js/custom.js"></script>
+
+    
+  </body>
+  </html>
