@@ -8,7 +8,7 @@
 
 <url>
   <loc>https://darksoul-git.github.io/</loc>
-  <lastmod>2024-04-28T13:02:23+00:00</lastmod>
+  <lastmod>2024-05-12T15:08:24+00:00</lastmod>
    <image:image>
       <image:loc>https://darksoul-git.github.io/images/What%20is%20a%20Blockchain.png</image:loc>
     </image:image>
@@ -49,7 +49,7 @@
 </url>
 <url>
   <loc>https://darksoul-git.github.io/about.html</loc>
-  <lastmod>2024-04-28T13:02:23+00:00</lastmod>
+  <lastmod>2024-05-12T15:08:24+00:00</lastmod>
     <image:image>
       <image:loc>https://darksoul-git.github.io/images/darksoul.jpg</image:loc>
     </image:image> 
@@ -57,17 +57,17 @@
 </url>
 <url>
   <loc>https://darksoul-git.github.io/contact.html</loc>
-  <lastmod>2024-04-28T13:02:23+00:00</lastmod>
+  <lastmod>2024-05-12T15:08:24+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://darksoul-git.github.io/blogs.html</loc>
-  <lastmod>2024-04-28T13:02:23+00:00</lastmod>
+  <lastmod>2024-05-12T15:08:24+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://darksoul-git.github.io/category.html</loc>
-  <lastmod>2024-04-28T13:02:23+00:00</lastmod>
+  <lastmod>2024-05-12T15:08:24+00:00</lastmod>
   <image:image>
       <image:loc>https://darksoul-git.github.io/images/What%20is%20a%20Blockchain.png</image:loc>
     </image:image>
@@ -90,7 +90,7 @@
 </url>
 <url>
   <loc>https://darksoul-git.github.io/category-travel.html</loc>
-  <lastmod>2024-04-28T13:02:23+00:00</lastmod>
+  <lastmod>2024-05-12T15:08:24+00:00</lastmod>
     <image:image>
       <image:loc>https://darksoul-git.github.io/images/Best-5-places-to-Hangout.webp</image:loc>
     </image:image>
@@ -113,7 +113,7 @@
 </url>
 <url>
   <loc>https://darksoul-git.github.io/category-pl-sql.html</loc>
-  <lastmod>2024-04-28T13:02:23+00:00</lastmod>
+  <lastmod>2024-05-12T15:08:24+00:00</lastmod>
     <image:image>
       <image:loc>https://darksoul-git.github.io/images/Insert-Record-into-Anonymous-Block.webp</image:loc>
     </image:image>
@@ -129,11 +129,14 @@
      <image:image>
       <image:loc>https://darksoul-git.github.io/images/Display%20Department%20name%20and%20Total%20Salary%20Expenditure%20of%20the%20Department.webp</image:loc>
     </image:image>
+    <image:image>
+      <image:loc>https://darksoul-git.github.io/images/Retrieve%20all%20the%20information%20about%20each%20department.webp</image:loc>
+    </image:image>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://darksoul-git.github.io/designs.html</loc>
-  <lastmod>2024-04-28T13:02:23+00:00</lastmod>
+  <lastmod>2024-05-12T15:08:24+00:00</lastmod>
     <image:image>
       <image:loc>https://darksoul-git.github.io/images/DarkSoul-3d-models.webp</image:loc>
     </image:image> 
@@ -141,17 +144,17 @@
 </url>
 <url>
   <loc>https://darksoul-git.github.io/3d-models.html</loc>
-  <lastmod>2024-04-28T13:02:23+00:00</lastmod>
+  <lastmod>2024-05-12T15:08:24+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://darksoul-git.github.io/privacy.html</loc>
-  <lastmod>2024-04-28T13:02:23+00:00</lastmod>
+  <lastmod>2024-05-12T15:08:24+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://darksoul-git.github.io/Best-5-Relaxing-and-Peaceful-Places-in-Luxembourg.html</loc>
-  <lastmod>2024-04-28T13:02:23+00:00</lastmod>
+  <lastmod>2024-05-12T15:08:24+00:00</lastmod>
    <image:image>
       <image:loc>https://darksoul-git.github.io/images/Best%205%20Relaxing%20and%20Peaceful%20Places%20in%20Luxembourg.webp</image:loc>
     </image:image> 
@@ -159,7 +162,7 @@
 </url>
 <url>
   <loc>https://darksoul-git.github.io/Best-5-Adventure-Places-in-Ladakh.html</loc>
-  <lastmod>2024-04-28T13:02:23+00:00</lastmod>
+  <lastmod>2024-05-12T15:08:24+00:00</lastmod>
   <image:image>
       <image:loc>https://darksoul-git.github.io/images/Best-5-Adventure-Places-in-Ladakh.webp</image:loc>
     </image:image> 
@@ -167,7 +170,7 @@
 </url>
 <url>
   <loc>https://darksoul-git.github.io/Best-5-Chilling-Places-in-Kerala.html</loc>
-  <lastmod>2024-04-28T13:02:23+00:00</lastmod>
+  <lastmod>2024-05-12T15:08:24+00:00</lastmod>
   <image:image>
       <image:loc>https://darksoul-git.github.io/images/Best-5-Chilling-Places-in-Kerala.webp</image:loc>
     </image:image> 
@@ -175,7 +178,7 @@
 </url>
 <url>
   <loc>https://darksoul-git.github.io/What-are-the-uses-of-blockchain.html</loc>
-  <lastmod>2024-04-28T13:02:23+00:00</lastmod>
+  <lastmod>2024-05-12T15:08:24+00:00</lastmod>
   <image:image>
       <image:loc>https://darksoul-git.github.io/images/What%20are%20the%20uses%20of%20blockchain.png</image:loc>
     </image:image>
@@ -183,7 +186,7 @@
 </url>
 <url>
   <loc>https://darksoul-git.github.io/What-are-the-applications-of-blockchain.html</loc>
-  <lastmod>2024-04-28T13:02:23+00:00</lastmod>
+  <lastmod>2024-05-12T15:08:24+00:00</lastmod>
    <image:image>
       <image:loc>https://darksoul-git.github.io/images/What%20are%20the%20applications%20of%20blockchain.png</image:loc>
     </image:image>
@@ -191,7 +194,7 @@
 </url>
 <url>
   <loc>https://darksoul-git.github.io/Define-cryptocurrency-and-how-it-works.html</loc>
-  <lastmod>2024-04-28T13:02:23+00:00</lastmod>
+  <lastmod>2024-05-12T15:08:24+00:00</lastmod>
   <image:image>
       <image:loc>https://darksoul-git.github.io/images/Define%20Cryptocurrency%20and%20how%20it%20works.png</image:loc>
     </image:image>
@@ -199,7 +202,7 @@
 </url>
 <url>
   <loc>https://darksoul-git.github.io/Best-5-places-to-Hangout.html</loc>
-  <lastmod>2024-04-28T13:02:23+00:00</lastmod>
+  <lastmod>2024-05-12T15:08:24+00:00</lastmod>
   <image:image>
       <image:loc>https://darksoul-git.github.io/images/Best-5-places-to-Hangout.webp</image:loc>
     </image:image>
@@ -207,7 +210,7 @@
 </url>
 <url>
   <loc>https://darksoul-git.github.io/Best-5-attractive-places-to-visit-in-Paris.html</loc>
-  <lastmod>2024-04-28T13:02:23+00:00</lastmod>
+  <lastmod>2024-05-12T15:08:24+00:00</lastmod>
    <image:image>
       <image:loc>https://darksoul-git.github.io/images/Best%205%20attractive%20places%20to%20visit%20in%20Paris.png</image:loc>
     </image:image> 
@@ -215,7 +218,7 @@
 </url>
 <url>
   <loc>https://darksoul-git.github.io/Best-5-amazing-places-to-visit-in-Taiwan.html</loc>
-  <lastmod>2024-04-28T13:02:23+00:00</lastmod>
+  <lastmod>2024-05-12T15:08:24+00:00</lastmod>
     <image:image>
       <image:loc>https://darksoul-git.github.io/images/Best-5-amazing-places-to-visit-in-Taiwan.webp</image:loc>
     </image:image> 
@@ -223,7 +226,7 @@
 </url>
 <url>
   <loc>https://darksoul-git.github.io/Blog2.html</loc>
-  <lastmod>2024-04-28T13:02:23+00:00</lastmod>
+  <lastmod>2024-05-12T15:08:24+00:00</lastmod>
      <image:image>
       <image:loc>https://darksoul-git.github.io/images/Where%20do%20I%20learn%20about%20Blockchain.png</image:loc>
     </image:image>
@@ -231,7 +234,7 @@
 </url>
 <url>
   <loc>https://darksoul-git.github.io/Blog1.html</loc>
-  <lastmod>2024-04-28T13:02:23+00:00</lastmod>
+  <lastmod>2024-05-12T15:08:24+00:00</lastmod>
    <image:image>
       <image:loc>https://darksoul-git.github.io/images/What%20is%20a%20Blockchain.png</image:loc>
     </image:image>
@@ -239,7 +242,7 @@
 </url>
 <url>
   <loc>https://darksoul-git.github.io/Blog3.html</loc>
-  <lastmod>2024-04-28T13:02:23+00:00</lastmod>
+  <lastmod>2024-05-12T15:08:24+00:00</lastmod>
    <image:image>
       <image:loc>https://darksoul-git.github.io/images/How%20Blockchain%20affects%20Share%20market.png</image:loc>
     </image:image>
@@ -247,17 +250,17 @@
 </url>
 <url>
   <loc>https://darksoul-git.github.io/disclaimer.html</loc>
-  <lastmod>2024-04-28T13:02:23+00:00</lastmod>
+  <lastmod>2024-05-12T15:08:24+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://darksoul-git.github.io/termsandconditions.html</loc>
-  <lastmod>2024-04-28T13:02:23+00:00</lastmod>
+  <lastmod>2024-05-12T15:08:24+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://darksoul-git.github.io/pencil-3d-model.html</loc>
-  <lastmod>2024-04-28T13:02:23+00:00</lastmod>
+  <lastmod>2024-05-12T15:08:24+00:00</lastmod>
   <image:image>
       <image:loc>https://darksoul-git.github.io/images/pencil-3d-model-cover-image.png</image:loc>
     </image:image>
@@ -265,7 +268,7 @@
 </url>
 <url>
   <loc>https://darksoul-git.github.io/bomb-3d-model.html</loc>
-  <lastmod>2024-04-28T13:02:23+00:00</lastmod>
+  <lastmod>2024-05-12T15:08:24+00:00</lastmod>
    <image:image>
       <image:loc>https://darksoul-git.github.io/images/bomb-3d-model-cover-image.png</image:loc>
     </image:image>
@@ -273,7 +276,7 @@
 </url>
 <url>
   <loc>https://darksoul-git.github.io/3d-abstract-planet.html</loc>
-  <lastmod>2024-04-28T13:02:23+00:00</lastmod>
+  <lastmod>2024-05-12T15:08:24+00:00</lastmod>
    <image:image>
       <image:loc>https://darksoul-git.github.io/images/3d-abstract-planet-cover-image.webp</image:loc>
     </image:image>
@@ -281,7 +284,7 @@
 </url>
 <url>
   <loc>https://darksoul-git.github.io/3d-bullock-head.html</loc>
-  <lastmod>2024-04-28T13:02:23+00:00</lastmod>
+  <lastmod>2024-05-12T15:08:24+00:00</lastmod>
    <image:image>
       <image:loc>https://darksoul-git.github.io/images/3d-bullock-head-cover-image.png</image:loc>
     </image:image>
@@ -289,7 +292,7 @@
 </url>
 <url>
   <loc>https://darksoul-git.github.io/Insert-Record-into-Anonymous-Block.html</loc>
-  <lastmod>2024-04-28T13:02:23+00:00</lastmod>
+  <lastmod>2024-05-12T15:08:24+00:00</lastmod>
    <image:image>
       <image:loc>https://darksoul-git.github.io/images/Insert-Record-into-Anonymous-Block.webp</image:loc>
     </image:image>
@@ -297,7 +300,7 @@
 </url>
 <url>
   <loc>https://darksoul-git.github.io/Calculate-Area-of-a-Circle-Using-PL-SQL.html</loc>
-  <lastmod>2024-04-28T13:02:23+00:00</lastmod>
+  <lastmod>2024-05-12T15:08:24+00:00</lastmod>
     <image:image>
       <image:loc>https://darksoul-git.github.io/images/Calculate-Area-of-a-Circle-Using-PL-SQL.webp</image:loc>
     </image:image>
@@ -305,7 +308,7 @@
 </url>
 <url>
   <loc>https://darksoul-git.github.io/Delete-all-records-of-Department-which-is-located-in-CHN-102.html</loc>
-  <lastmod>2024-04-28T13:02:23+00:00</lastmod>
+  <lastmod>2024-05-12T15:08:24+00:00</lastmod>
    <image:image>
       <image:loc>https://darksoul-git.github.io/images/Delete%20all%20records%20of%20Department%20which%20is%20located%20in%20CHN-102.webp</image:loc>
     </image:image>
@@ -313,7 +316,7 @@
 </url>
 <url>
   <loc>https://darksoul-git.github.io/Display-department-names-using-cursor.html</loc>
-  <lastmod>2024-04-28T13:02:23+00:00</lastmod>
+  <lastmod>2024-05-12T15:08:24+00:00</lastmod>
    <image:image>
       <image:loc>https://darksoul-git.github.io/images/Display%20department%20names%20using%20cursor.webp</image:loc>
     </image:image>
@@ -321,9 +324,17 @@
 </url>
 <url>
   <loc>https://darksoul-git.github.io/Display-department-name-and-total-salary-expenditure-of-the-Department.html</loc>
-  <lastmod>2024-04-28T13:02:23+00:00</lastmod>
+  <lastmod>2024-05-12T15:08:24+00:00</lastmod>
   <image:image>
       <image:loc>https://darksoul-git.github.io/images/Display%20Department%20name%20and%20Total%20Salary%20Expenditure%20of%20the%20Department.webp</image:loc>
+    </image:image>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://darksoul-git.github.io/Retrieve-all-the-information-about-each-department.html</loc>
+  <lastmod>2024-05-12T15:08:24+00:00</lastmod>
+    <image:image>
+      <image:loc>https://darksoul-git.github.io/images/Retrieve%20all%20the%20information%20about%20each%20department.webp</image:loc>
     </image:image>
   <priority>0.64</priority>
 </url>
