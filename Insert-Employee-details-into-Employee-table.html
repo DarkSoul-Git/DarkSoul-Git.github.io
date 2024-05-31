@@ -1,0 +1,414 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="author" content="DarkSoul">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <meta name="description" content="Learn how to insert employee details into the Employee table with clear, step-by-step instructions on the DarkSoul-Git website. Access, copy, and learn from meticulously documented code to enhance your PL/SQL programming skills" />
+  <meta name="keywords" content="Insert Employee details into Employee table, Inserting Employee details into Employee table PL/SQL, Insert Employee details into Employee table using plsql, DarkSoul, PL/SQL, DarkSoul plsql" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="fonts/icomoon/style.css">
+  <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+  <link rel="stylesheet" href="css/aos.css">
+  <link rel="stylesheet" href="css/glightbox.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <link rel="stylesheet" href="css/flatpickr.min.css">
+
+
+  <title>Insert Employee details into Employee table - DarkSoul</title>
+ 
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Organization",
+      "url": "https://darksoul-git.github.io/",
+      "name": "DarkSoul - Best UI/UX Designs and blogs for better understanding",
+      "description": "DarkSoul, your number-one source for all things. We're dedicated to giving you the very best of designs and blogs with an emphasis on technical, graphical, and logical",
+      "logo": "https://darksoul-git.github.io/images/logo.png",
+      "sameAs": [
+        "https://codepen.io/DarkSoul-/",
+        "https://dribbble.com/DarkSoulinDribble/"
+      ]
+    }
+    </script>
+  
+<style>
+  @font-face 
+		{
+			font-family: "icomoon";
+        	src: url("https://darksoul-git.github.io/fonts/icomoon/fonts/icomoon.ttf?");
+  			font-display: swap;
+		}
+  h2, h3{
+    font-family: 'Ubuntu', sans-serif;
+    
+}
+
+.content
+        {
+			      font-family: "Work Sans", sans-serif !important;
+            text-align: justify; 
+            color: black;
+            line-height: 1.6;
+        }
+        .content h3, .content h2
+        {
+          font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        h4
+		{
+			font-weight: bolder !important;
+			color: white !important;
+          	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;	
+		}
+        .date{ color: black !important;}
+        .blog-entry{color: black !important;}
+     
+        textarea
+  {
+    margin-top: 55px;
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    resize: none;
+    font-size: large;
+    min-height: 400px;
+    width: 700px;
+    background-color: rgb(255, 255, 255);
+    border: 0.1px solid rgb(210, 210, 210);
+    border-radius: 8px;
+    box-shadow: 0px 0px 50px rgb(230, 230, 230);
+  	font-weight: 500;
+    color: rgb(0, 0, 0);
+  }
+      /* width */
+      ::-webkit-scrollbar 
+        {
+            width: 5px;
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track 
+        {
+            background-color: rgba(226, 247, 255, 0);
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb 
+        {
+        background: #adadad;
+        border-radius: 10px;
+        height: 10px;
+        width: 3px;
+        }
+
+        ::selection
+        {
+            background-color: #202020;
+            color: white;
+        }
+</style>
+<script type="text/javascript">
+  (function(c,l,a,r,i,t,y){
+    c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+    t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+    y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+  })(window, document, "clarity", "script", "iir3jmgyug");
+</script>
+	<!-- Google tag (gtag.js)-->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-015RX6GMQJ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  
+    gtag('config', 'G-015RX6GMQJ');
+  </script> 
+</head>
+<body>
+
+  <!-- Mobile Navigation Bar -->
+  <div class="site-mobile-menu site-navbar-target" id="mobilenav">
+      
+  </div>
+  <!-- Desktop Navigation Bar -->
+  <nav class="site-nav bg-dark" id="header">
+  
+  </nav>
+
+  <div class="site-cover site-cover-sm same-height overlay single-page bg-dark">
+    <div class="container">
+      <div class="row same-height justify-content-center">
+        <div class="col-md-6" > 
+          <div class="post-entry text-left" >
+            <h1 class="mb-4" style="font-weight: 800;">Insert Employee details into Employee table</h1>
+            <div class="post-meta align-items-center text-left">
+              <figure class="author-figure mb-0 me-3 d-inline-block"><img src="favicon.ico" alt="Image" class="img-fluid"  width="640" height="360"></figure>
+              <span class="d-inline-block mt-1">By DarkSoul</span>
+              <span>&nbsp;-&nbsp; May 31, 2024</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container">
+
+      <div class="row blog-entries element-animate">
+
+        <div class="main-content">
+
+          <div class="post-content-body content">
+            <div class="col-md-12 mb-4" style="display: flex;">
+              <img src="images/Insert-Employee-details-into-Employee-table.webp" alt="Insert-Employee-details-into-Employee-table - cover image" class="img-fluid rounded justify-content-center" style="margin: auto;">
+            </div>
+            <p>Create a PL/SQL Procedure to insert employee details into Employee table. Before inserting, check whether the employee age is eligible or not. Employee age should be 18 or greater. Values are passed as argument to the procedure.
+              If age valid, insert employee record into table and print the message "Age valid - Record inserted", else print the message "Age invalid - Record not inserted" by raising an exception.</p>
+              <p>Table: EMPLOYEE</p>
+            <table class="table table-hover table-dark table-striped mt-4 mb-4" style="max-width: 400px;">
+              <thead>
+                <tr>
+                  <th>COLUMN</th>
+                  <th>DATATYPE</th>
+                  <th>CONS.</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>EMPID</td>
+                  <td>NUMBER(5)</td>
+                  <td>PK</td>
+                </tr>
+                <tr>
+                  <td>EMPNAME</td>
+                  <td>VARCHAR2(25)</td>
+                  <td>NOT NULL</td>
+                </tr>
+                <tr>
+                  <td>AGE</td>
+                  <td>NUMBER(3)</td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+
+            <pre> 
+Sample Input 1:
+CHECK_AGE_ELIGIBILITY(103, 'Robert', 24);
+              
+Sample Output 1:
+Age valid - Record inserted
+              
+Sample Input 2:
+CHECK_AGE_ELIGIBILITY(104,'Riya', 4);
+              
+Sample Output 2:
+Age invalid - Record not inserted
+            </pre>
+
+              <strong>(Hint: Data is case sensitive. Use '/' to terminate the PLSQL block)</strong>
+      
+            <div class="col-md-12 mb-4" style="display: flex;">
+             
+               <textarea disabled id="plsql">
+
+    CREATE OR REPLACE PROCEDURE check_age_eligibility
+    (v_id in employee.empid%type,
+    v_name in employee.empname%type,
+    v_age in employee.age%type)
+    AS
+    Not_ValidException exception;
+    BEGIN 
+    IF v_age > 18 THEN 
+    	INSERT INTO employee VALUES(v_id, v_name, v_age);
+    	DBMS_OUTPUT.PUT_LINE('Age valid - Record inserted');
+    ELSE
+    	RAISE Not_ValidException;
+    END IF;
+    EXCEPTION
+    WHEN Not_ValidException THEN
+    	DBMS_OUTPUT.PUT_LINE('Age invalid Record not inserted');
+    END;
+    /   
+                  </textarea>
+               
+                  </div>
+                  <div class="col-md-12 mb-4" style="display: flex;">
+          
+                  <button id="button" class="btn btn-outline-dark m-auto" style="width: fit-content; height: fit-content;" onclick="copy()">Copy</button>
+            </div>
+                  <script>
+                    var textarea = document.getElementById('plsql');
+                    var button = document.getElementById('button');
+                      function copy() {
+            textarea.select();
+            navigator.clipboard.writeText(textarea.value);
+            button.innerHTML = 'COPIED!';
+        }
+                  </script>
+
+                  <p>
+                    Let's break down the procedure step-by-step in a simple understandable way:
+                  </p>
+           
+                  <p>
+                    <b>Procedure Declaration:
+                    </b> 
+                    <ul>
+                      <li>The procedure is named check_age_eligibility.</li>
+                      <li> It accepts three input parameters: v_id, v_name, and v_age.</li>
+                      <li>These parameters correspond to the employee's ID, name, and age, respectively.</li>
+                     
+                    </ul> 
+                  </p>
+              
+                  <p><b>Parameter Types:</b>
+                  <ul>
+                    <li>The types of these parameters (employee.empid%type, employee.empname%type, employee.age%type) are derived from the employee table columns. This ensures the parameters match the data types of the respective table columns.</li>
+                  </ul>
+                  </p>
+                
+                  <p><b>Exception Declaration:
+                  </b>
+                    <ul>
+                      <li>An exception named Not_ValidException is declared. This will be used to handle cases where the age is not valid (i.e., 18 or younger).</li>
+                    </ul>
+                  </p>
+                 
+                  <p> <b>Begin Block:</b>
+                    <ul>
+                      <li>The main logic of the procedure starts here.</li>
+                    </ul>
+                   </p>
+                  
+                  <p><b>Age Check:
+                  </b>
+                  <ul>
+                    <li>The procedure checks if the input age (v_age) is greater than 18.</li>
+                    <li>If v_age is greater than 18, it proceeds to insert the employee details into the employee table.</li>
+                  </ul>
+                 </p>
+                 
+                  <p><b>Insert Statement:</b>
+                    <ul>
+                      <li>The INSERT INTO employee VALUES(v_id, v_name, v_age); statement adds the new employee record to the table.
+                        </li>
+                      <li>A message is displayed using DBMS_OUTPUT.PUT_LINE('Age valid - Record inserted'); indicating that the age is valid and the record has been inserted successfully.</li>
+                    </ul>
+                  </p>
+                  <p><b>Exception Handling:</b>
+                    <ul>
+                      <li>If the age is not greater than 18, the procedure raises the Not_ValidException.
+                        In the EXCEPTION block, when the Not_ValidException is caught, a message is displayed using DBMS_OUTPUT.PUT_LINE('Age invalid - Record not inserted'); indicating that the age is invalid and the record was not inserted.
+                        </li>
+                    </ul>
+                  </p>
+                  <p><b>End Block:</b>
+                    <ul>
+                      <li>  The procedure ends here. </li>
+                    </ul>
+                  </p>
+                  <p>
+                    This procedure checks an employee's age before inserting their details into the employee table. If the age is greater than 18, the details are inserted, and a confirmation message is displayed. If the age is 18 or less, an exception is raised, and a message indicating the invalid age is displayed. </p>
+                 
+                
+          
+          <div class="pt-5">
+            <p>Categories:  <a href="category-pl-sql.html">PL/SQL Hands-on</a>  Tags: <a href="#">#Insert Employee details into Employee table</a>, <a href="#">#PL/SQL</a></p>
+          </div>
+
+
+
+            <div class="comment-form-wrap pt-5">
+              <h3 class="mb-5" style="color: black;">Leave a comment</h3>
+              <form action="https://docs.google.com/forms/d/e/1FAIpQLSfy_pkp3cVBSPDNpS27p2F_zKnwC6O1dNXrFTscjn_XxITQ-w/formResponse" class="p-5 bg-light">
+                <div class="form-group">
+                  <label for="name">Name</label>
+                  <input type="text" class="form-control" id="name" name="entry.505217379" required autocomplete="on">
+                </div>
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" class="form-control" id="email" name="entry.1718450961" required autocomplete="on">
+                </div>
+                <div class="form-group">
+                  <label for="subject">Subject</label>
+                  <input type="text" class="form-control" id="subject" name="entry.390459327" required autocomplete="on">
+                </div>
+
+                <div class="form-group">
+                  <label for="message">Message</label>
+                  <textarea name="entry.117980495" id="message" cols="30" rows="10" class="form-control" required autocomplete="on"></textarea>
+                </div>
+                <div class="form-group">
+                  <input type="submit" value="Post Comment" class="btn btn-outline-dark">
+                </div>
+
+              </form>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- END main-content -->
+
+        
+ 
+
+      </div>
+    </div>
+  </section>
+
+
+ 
+
+
+
+ <!-- /.site-footer -->
+ <footer class="site-footer bg-dark" id="footer">
+		
+ </footer>
+
+    <!-- Preloader -->
+    <div id="overlayer"></div>
+    <div class="loader">
+      <div class="spinner-border text-primary" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+    </div>
+    <script async src="js/header.js"></script>
+    <script async src="js/footer.js"></script>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+   
+
+    <script src="js/flatpickr.min.js"></script>
+
+
+    <script src="js/aos.js"></script>
+    <script src="js/glightbox.min.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/counter.js"></script>
+    <script src="js/custom.js"></script>
+
+    
+  </body>
+  </html>
