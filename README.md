@@ -1,5 +1,3 @@
-# DarkSoul
+# DarkSoul Git Blogs
 
-Website URL: https://darksoul-git.github.io/
-
-This is a Git repository for DakSoul to reach out to the internet...
+Explore travel blogs, tech insights, PL/SQL solutions, and 3D model previews on DarkSoul Git Blogs. Your go-to resource for tech and travel enthusiasts.
