@@ -12,8 +12,8 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   <link rel="manifest" href="/site.webmanifest">
 
-  <meta name="description" content="Discover the power of PL/SQL on DarkSoul Git Blogs with our solution to calculate the area of a circle. Unlock the efficiency of procedural language in Oracle databases to effortlessly compute circle areas. Enhance your coding prowess and explore practical applications. Join us on DarkSoul-Git and master PL/SQL today!" />
-  <meta name="keywords" content="Calculate Area of a Circle Using PL SQL, Area of a Circle Using PL/SQL, solution to Calculate Area of a Circle in plsql, DarkSoul Git Blogs, PL/SQL, DarkSoul plsql" />
+  <meta name="description" content="Learn how to create a PL/SQL function to calculate employee increments with step-by-step instructions and source code. Visit DarkSoul Git Blogs for detailed guidance." />
+  <meta name="keywords" content="Create a PLSQL Function to calculate increment for the employees, Create a PLSQL Function to calculate increment for the employees PL/SQL, Create a Function to calculate increment for the employees using plsql, DarkSoul Git Blogs, PL/SQL, DarkSoul plsql" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap" rel="stylesheet">
@@ -31,7 +31,7 @@
   <link rel="stylesheet" href="css/flatpickr.min.css">
 
 
-  <title>Calculate Area of a Circle Using PL/SQL - DarkSoul Git Blogs</title>
+  <title>Create a PLSQL Function to calculate increment for the employees - DarkSoul Git Blogs</title>
  
   <script type="application/ld+json">
     {
@@ -62,7 +62,7 @@
 
 .content
         {
-			      font-family: "Work Sans", sans-serif !important;
+			font-family: "Work Sans", sans-serif !important;
             text-align: justify; 
             color: black;
             line-height: 1.6;
@@ -157,11 +157,11 @@
       <div class="row same-height justify-content-center">
         <div class="col-md-6" > 
           <div class="post-entry text-left" >
-            <h1 class="mb-4" style="font-weight: 800;">Calculate Area of a Circle Using PL/SQL</h1>
+            <h1 class="mb-4" style="font-weight: 800;">Create a PLSQL Function to Calculate Increment for the Employees</h1>
             <div class="post-meta align-items-center text-left">
               <figure class="author-figure mb-0 me-3 d-inline-block"><img src="favicon.ico" alt="Image" class="img-fluid"  width="640" height="360"></figure>
               <span class="d-inline-block mt-1">By DarkSoul</span>
-              <span>&nbsp;-&nbsp; February 25, 2024</span>
+              <span>&nbsp;-&nbsp; June 13, 2024</span>
             </div>
           </div>
         </div>
@@ -178,48 +178,56 @@
 
           <div class="post-content-body content">
             <div class="col-md-12 mb-4" style="display: flex;">
-              <img src="images/Calculate-Area-of-a-Circle-Using-PL-SQL.webp" alt="Calculate-Area-of-a-Circle-Using-PL-SQL - cover image" class="img-fluid rounded justify-content-center" style="margin: auto;">
+              <img src="images/Create-a-PLSQL-Function-to-calculate-increment-for-the-employees.webp" alt="Create-a-PLSQL-Function-to-calculate-increment-for-the-employees - cover image" class="img-fluid rounded justify-content-center" style="margin: auto;">
             </div>
-            <p>Write a PL/SQL block to calculate the area of a circle for the radius ranging from 3 to 7. Store the radius and corresponding area into the Circle table.</p>
+            <p>Create a PL/SQL Function to calculate increment for the employees. Function will take increment percentage and salary as input and return increment amount as output.</p>
+              <p>Table: EMPLOYEE</p>
             <table class="table table-hover table-dark table-striped mt-4 mb-4" style="max-width: 400px;">
               <thead>
                 <tr>
                   <th>COLUMN</th>
                   <th>DATATYPE</th>
+                  <th>CONS.</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td>Radius</td>
+                  <td>EMPID</td>
                   <td>NUMBER(5)</td>
+                  <td>PK</td>
                 </tr>
                 <tr>
-                  <td>Area</td>
-                  <td>NUMBER(7,2)</td>
+                  <td>EMPNAME</td>
+                  <td>VARCHAR2(25)</td>
+                  <td>NOT NULL</td>
                 </tr>
-               
+                <tr>
+                  <td>SALARY</td>
+                  <td>NUMBER(10,2)</td>
+                  <td></td>
+                </tr>
               </tbody>
             </table>
 
+            <p> 
+                <b>Functional Requirement:</b>
 
-              <strong>(Note: Use / at the end to terminate the PL/SQL block)</strong>
+                FUNCTION calculate_Increment(incperc number, salary number)
+            </p>
+
+              <strong>(Hint: Data is case sensitive. Use '/' to terminate the PLSQL block)</strong>
       
             <div class="col-md-12 mb-4" style="display: flex;">
              
                <textarea disabled id="plsql">
 
-      DECLARE
-          Radius number(5);
-          Area number (7,2);
-          Pi constant number(3,2) := 3.14;
-      BEGIN
-          FOR Radius in 3..7 LOOP
-          Area := Pi * Radius * Radius;
-          INSERT INTO Circle VALUES(Radius, Area);
-          END LOOP;
-      END;
-      /
-
+    CREATE OR REPLACE FUNCTION calculate_Increment (incperc number, salary number)
+    RETURN number
+    IS
+    BEGIN
+        RETURN (incperc / 100)*salary;
+    END;
+    / 
                   </textarea>
                
                   </div>
@@ -238,51 +246,41 @@
                   </script>
 
                   <p>
-                    This PL/SQL code calculates the areas of circles for different radii and stores the results in a database table. Let's break it down:
+                    Here’s a simple, step-by-step procedure for creating a PL/SQL function to calculate employee increments:
                   </p>
-      
            
                   <p>
-                    <b>DECLARE:</b> We declare the following variables and a constant to use in our calculations.
-                     <ul>
-                      <li> A variable named <b>Radius</b> of type <b>NUMBER(5)</b> to store the radius of the circle.</li>
-                      <li> A variable named <b>Area</b> of type <b>NUMBER(7,2)</b> to store the calculated area of the circle.</li>
-                      <li> A constant named <b>Pi</b> of type <b>NUMBER(3,2)</b> and initializes it with the value of 3.14.</li>
-                     </ul>
+                    <b>Start with the Function Declaration:
+                    </b> 
+                    Begin by using the CREATE OR REPLACE FUNCTION statement to name your function, calculate_Increment. Specify two parameters: incperc (increment percentage) and salary (current salary), both as numbers.
                   </p>
               
-                  <p><b>BEGIN: </b>
-                  Marks the beginning of the executable part of the PL/SQL block.
+                  <p><b>Define the Return Type:</b>
+                    Indicate that your function will return a number using the RETURN number clause.
                   </p>
                 
-                  <p><b>FOR Loop:</b>
-                    Starts a loop that iterates over a range of values for the Radius variable. In this case, the loop will execute for Radius values ranging from 3 to 7 inclusive.
+                  <p><b>Begin the Function Body:
+                  </b>
+                  Use the IS keyword to start the function body.
                   </p>
                  
-                  <p><b>Area Calculation:</b>
-                    Inside the loop, the area of the circle is calculated using the formula Pi * Radius * Radius.
-                  </p>
+                  <p><b>Implement the Logic:
+                </b>
+                Inside the BEGIN and END; keywords, write the logic to calculate the increment. Multiply the salary by the increment percentage divided by 100.
+                   </p>
                   
-                  <p><b>INSERT INTO Circle:
+                  <p><b>Return the Result:
                   </b>
-                    We store the radius and its corresponding area in a database table called "Circle".
-                  </p>
-                  
-                  <p><b>END LOOP:</b>
-                    Marks the end of the loop.
-                  </p>
-
-                  <p><b>END:</b>
-                    Marks the end of the PL/SQL block.
-                  </p>
-                  <p>
-                  In essence, this code automates the process of calculating circle areas for different radii, making it easier to manage and analyze large datasets of circles.
-                  </p>
+                  Use the RETURN statement to output the calculated increment.
+                 </p>
+                 
+                  <p>               
+By following the steps above, you have successfully created a PL/SQL function, calculate_Increment, which calculates the increment for an employee's salary based on a given percentage. This function takes two parameters, the increment percentage and the salary, and returns the calculated increment. This efficient and reusable function can be integrated into larger PL/SQL programs to manage salary adjustments with ease.</p>
                  
                 
           
           <div class="pt-5">
-            <p>Categories:  <a href="category-pl-sql.html">PL/SQL Hands-on</a>  Tags: <a href="#">#Calculate area of a circle</a>, <a href="#">#PL/SQL</a></p>
+            <p>Categories:  <a href="category-pl-sql.html">PL/SQL Hands-on</a>  Tags: <a href="#">#Create a PLSQL Function to Calculate Increment for the Employees</a>, <a href="#">#PL/SQL</a></p>
           </div>
 
 
@@ -319,9 +317,6 @@
         </div>
 
         <!-- END main-content -->
-
-        
- 
 
       </div>
     </div>
