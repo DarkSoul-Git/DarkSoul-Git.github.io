@@ -1,0 +1,439 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="author" content="DarkSoul">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <meta name="description" content="Learn how to create a PL/SQL procedure to delete employee records from the Employee table on DarkSoul-Git Blogs. Follow our step-by-step guide with source code to effectively manage your database operations." />
+  <meta name="keywords" content="Create a procedure that deletes employee records from the Employee table, Create a procedure that deletes employee records from the Employee table PL/SQL, Create a procedure that deletes employee records from the Employee table using plsql, DarkSoul Git Blogs, PL/SQL, DarkSoul plsql" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="fonts/icomoon/style.css">
+  <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+  <link rel="stylesheet" href="css/aos.css">
+  <link rel="stylesheet" href="css/glightbox.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <link rel="stylesheet" href="css/flatpickr.min.css">
+
+
+  <title>Create a procedure that deletes employee records from the Employee table - DarkSoul Git Blogs</title>
+ 
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Organization",
+      "url": "https://darksoul-git.github.io/",
+      "name": "DarkSoul - Best UI/UX Designs and blogs for better understanding",
+      "description": "DarkSoul, your number-one source for all things. We're dedicated to giving you the very best of designs and blogs with an emphasis on technical, graphical, and logical",
+      "logo": "https://darksoul-git.github.io/images/logo.png",
+      "sameAs": [
+        "https://codepen.io/DarkSoul-/",
+        "https://dribbble.com/DarkSoulinDribble/"
+      ]
+    }
+    </script>
+  
+<style>
+  @font-face 
+		{
+			font-family: "icomoon";
+        	src: url("https://darksoul-git.github.io/fonts/icomoon/fonts/icomoon.ttf?");
+  			font-display: swap;
+		}
+  h2, h3{
+    font-family: 'Ubuntu', sans-serif;
+    
+}
+
+.content
+        {
+			font-family: "Work Sans", sans-serif !important;
+            text-align: justify; 
+            color: black;
+            line-height: 1.6;
+        }
+        .content h3, .content h2
+        {
+          font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        h4
+		{
+			font-weight: bolder !important;
+			color: white !important;
+          	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;	
+		}
+        .date{ color: black !important;}
+        .blog-entry{color: black !important;}
+     
+        textarea
+  {
+    margin-top: 55px;
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    resize: none;
+    font-size: large;
+    min-height: 400px;
+    width: 700px;
+    background-color: rgb(255, 255, 255);
+    border: 0.1px solid rgb(210, 210, 210);
+    border-radius: 8px;
+    box-shadow: 0px 0px 50px rgb(230, 230, 230);
+  	font-weight: 500;
+    color: rgb(0, 0, 0);
+  }
+      /* width */
+      ::-webkit-scrollbar 
+        {
+            width: 5px;
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track 
+        {
+            background-color: rgba(226, 247, 255, 0);
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb 
+        {
+        background: #adadad;
+        border-radius: 10px;
+        height: 10px;
+        width: 3px;
+        }
+
+        ::selection
+        {
+            background-color: #202020;
+            color: white;
+        }
+</style>
+<script type="text/javascript">
+  (function(c,l,a,r,i,t,y){
+    c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+    t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+    y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+  })(window, document, "clarity", "script", "iir3jmgyug");
+</script>
+	<!-- Google tag (gtag.js)-->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-015RX6GMQJ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  
+    gtag('config', 'G-015RX6GMQJ');
+  </script> 
+</head>
+<body>
+
+  <!-- Mobile Navigation Bar -->
+  <div class="site-mobile-menu site-navbar-target" id="mobilenav">
+      
+  </div>
+  <!-- Desktop Navigation Bar -->
+  <nav class="site-nav bg-dark" id="header">
+  
+  </nav>
+
+  <div class="site-cover site-cover-sm same-height overlay single-page bg-dark">
+    <div class="container">
+      <div class="row same-height justify-content-center">
+        <div class="col-md-6" > 
+          <div class="post-entry text-left" >
+            <h1 class="mb-4" style="font-weight: 800;">Create a Procedure that Deletes Employee Records from the Employee Table</h1>
+            <div class="post-meta align-items-center text-left">
+              <figure class="author-figure mb-0 me-3 d-inline-block"><img src="favicon.ico" alt="Image" class="img-fluid"  width="640" height="360"></figure>
+              <span class="d-inline-block mt-1">By DarkSoul</span>
+              <span>&nbsp;-&nbsp; June 24, 2024</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container">
+
+      <div class="row blog-entries element-animate">
+
+        <div class="main-content">
+
+          <div class="post-content-body content">
+            <div class="col-md-12 mb-4" style="display: flex;">
+              <img src="images/Create a procedure that deletes employee records from the Employee table.webp" alt="Create a procedure that deletes employee records from the Employee table - cover image" class="img-fluid rounded justify-content-center" style="margin: auto;">
+            </div>
+            <p>Create a procedure that deletes employee records from the Employee table. Get the department name as an input parameter. Delete the employee records who belongs to that department.</p>
+            <p>Display the count of employee records that were deleted. If the respective department was not found, then raise "DeptNotFoundException" and print the message 'No Records found.'</p>
+            <p>Assume the Employee table has been already created and few records has been inserted.</p> 
+            <p>Table: EMPLOYEE</p>
+            <table class="table table-hover table-dark table-striped mt-4 mb-4" style="max-width: 400px;">
+              <thead>
+                <tr>
+                  <th>COLUMN</th>
+                  <th>DATATYPE</th>
+                  <th>CONS.</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>EMPID</td>
+                  <td>NUMBER(5)</td>
+                  <td>PK</td>
+                </tr>
+                <tr>
+                  <td>EMPNAME</td>
+                  <td>VARCHAR2(25)</td>
+                  <td>NOT NULL</td>
+                </tr>
+                <tr>
+                  <td>SALARY</td>
+                  <td>NUMBER(10,2)</td>
+                  <td></td>
+                </tr>
+                <tr>
+                    <td>DEPT</td>
+                    <td>VARCHAR2(25)</td>
+                    <td></td>
+                  </tr>
+              </tbody>
+            </table>
+
+            <table class="table table-hover table-dark table-striped mt-4 mb-4" style="max-width: 400px;">
+                <thead>
+                  <tr>
+                    <th>EMP_ID</th>
+                    <th>EMP_NAME</th>
+                    <th>SALARY</th>
+                    <th>DEPT</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>101</td>
+                    <td>Tom</td>
+                    <td>54000</td>
+                    <td>MECH</td>
+                  </tr>
+                  <tr>
+                    <td>102</td>
+                    <td>William</td>
+                    <td>43000</td>
+                    <td>CSE</td>
+                  </tr>
+                  <tr>
+                    <td>103</td>
+                    <td>John</td>
+                    <td>34560</td>
+                    <td>MECH</td>
+                  </tr>
+                  <tr>
+                    <td>104</td>
+                    <td>Smith</td>
+                    <td>56000</td>
+                    <td>CSE</td>
+                  </tr>
+                  <tr>
+                    <td>105</td>
+                    <td>Steve</td>
+                    <td>23450</td>
+                    <td>IT</td>
+                  </tr>
+                </tbody>
+              </table>
+
+            <p> 
+                <b>Functional Requirement:</b>
+
+                PROCEDURE DELETE_EMPLOYEE(v_dept IN EMPLOYEE.dept%TYPE)
+            </p>
+
+            <p><b>Sample Output:</b></p>
+            <pre>2 Employee record(s) got deleted.</pre>
+
+              <strong>(Hint: Data is case sensitive. Use '/' to terminate the PLSQL block)</strong>
+      
+            <div class="col-md-12 mb-4" style="display: flex;">
+             
+               <textarea disabled id="plsql">
+
+    SET SERVEROUTPUT ON;
+    CREATE OR REPLACE PROCEDURE DELETE_EMPLOYEE (v_dept IN EMPLOYEE.dept%type)
+    IS
+    DeptNotFoundException EXCEPTION;
+    BEGIN
+        DELETE FROM EMPLOYEE WHERE EMPLOYEE.DEPT = v_dept;
+        IF SQL%FOUND THEN
+        dbms_output.put_line(SQL%ROWCOUNT || ' Employee record(s) got deleted.');
+        ELSE
+        RAISE DeptNotFoundException;
+        END IF;
+    EXCEPTION
+        WHEN DeptNotFoundException THEN
+        dbms_output.put_line('No Records found.');
+    END;
+    /
+                  </textarea>
+               
+                  </div>
+                  <div class="col-md-12 mb-4" style="display: flex;">
+          
+                  <button id="button" class="btn btn-outline-dark m-auto" style="width: fit-content; height: fit-content;" onclick="copy()">Copy</button>
+            </div>
+                  <script>
+                    var textarea = document.getElementById('plsql');
+                    var button = document.getElementById('button');
+                      function copy() {
+            textarea.select();
+            navigator.clipboard.writeText(textarea.value);
+            button.innerHTML = 'COPIED!';
+        }
+                  </script>
+
+                  <p>
+                    here's a simple step-by-step explanation for the PL/SQL code:
+                  </p>
+
+                  <p>
+                    <b>Enable Output:
+                    </b> 
+                    SET SERVEROUTPUT ON; allows you to see output from the dbms_output.put_line calls.  </p>
+              
+                  <p><b>Create Procedure:</b>
+                    The CREATE OR REPLACE PROCEDURE DELETE_EMPLOYEE statement begins the creation of a procedure named DELETE_EMPLOYEE which takes v_dept as an input parameter.  </p>
+                
+                  <p><b>Declare Exception:
+                  </b>
+                  DeptNotFoundException is an exception that will be used to handle cases where no records are found.
+                  </p>
+                 
+                  <p><b>Begin Block:
+                </b>
+                The BEGIN block starts the procedure's main logic.
+                   </p>
+                  
+                  <p><b>Delete Records:
+                  </b>
+                  The DELETE FROM EMPLOYEE WHERE EMPLOYEE.DEPT = v_dept; statement deletes employee records where the department matches v_dept.
+                 </p>
+
+                  <p><b>Check Deletion:
+                  </b>
+                  The IF SQL%FOUND condition checks if any rows were deleted. If rows were deleted, it prints the number of deleted records.
+                 </p>
+
+                 <p><b>Raise Exception:
+                 </b>
+                 If no rows were deleted, the RAISE DeptNotFoundException; statement triggers the custom exception.
+                 </p>
+
+                 <p><b>Exception Handling:
+                </b>
+                The EXCEPTION block handles the DeptNotFoundException by printing "No Records found."
+                </p>
+                <p><b>End Procedure:
+                </b>
+                The END; statement marks the end of the procedure.
+                </p>
+
+                 
+                  <p>               
+                    This procedure ensures that you get feedback on the operation, whether records were deleted or not.
+                </p>
+                 
+                
+          
+          <div class="pt-5">
+            <p>Categories:  <a href="category-pl-sql.html">PL/SQL Hands-on</a>  Tags: <a href="#">#Create a Procedure that Deletes Employee Records from the Employee Table</a>, <a href="#">#PL/SQL</a></p>
+          </div>
+
+
+
+            <div class="comment-form-wrap pt-5">
+              <h3 class="mb-5" style="color: black;">Leave a comment</h3>
+              <form action="https://docs.google.com/forms/d/e/1FAIpQLSfy_pkp3cVBSPDNpS27p2F_zKnwC6O1dNXrFTscjn_XxITQ-w/formResponse" class="p-5 bg-light">
+                <div class="form-group">
+                  <label for="name">Name</label>
+                  <input type="text" class="form-control" id="name" name="entry.505217379" required autocomplete="on">
+                </div>
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" class="form-control" id="email" name="entry.1718450961" required autocomplete="on">
+                </div>
+                <div class="form-group">
+                  <label for="subject">Subject</label>
+                  <input type="text" class="form-control" id="subject" name="entry.390459327" required autocomplete="on">
+                </div>
+
+                <div class="form-group">
+                  <label for="message">Message</label>
+                  <textarea name="entry.117980495" id="message" cols="30" rows="10" class="form-control" required autocomplete="on"></textarea>
+                </div>
+                <div class="form-group">
+                  <input type="submit" value="Post Comment" class="btn btn-outline-dark">
+                </div>
+
+              </form>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- END main-content -->
+
+      </div>
+    </div>
+  </section>
+
+
+ 
+
+
+
+ <!-- /.site-footer -->
+ <footer class="site-footer bg-dark" id="footer">
+		
+ </footer>
+
+    <!-- Preloader -->
+    <div id="overlayer"></div>
+    <div class="loader">
+      <div class="spinner-border text-primary" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+    </div>
+    <script async src="js/header.js"></script>
+    <script async src="js/footer.js"></script>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+   
+
+    <script src="js/flatpickr.min.js"></script>
+
+
+    <script src="js/aos.js"></script>
+    <script src="js/glightbox.min.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/counter.js"></script>
+    <script src="js/custom.js"></script>
+
+    
+  </body>
+  </html>
