@@ -1,0 +1,409 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="author" content="DarkSoul">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <meta name="description" content="Learn how to write a PL/SQL procedure to display all student first names efficiently. Follow this step-by-step guide on DarkSoul Git Blogs to enhance your database skills with practical examples." />
+  <meta name="keywords" content="Write a PL/SQL procedure to display all student first name, PL/SQL procedure to display all student first name, Write a procedure to display all student first name using PL/SQL, DarkSoul Git Blogs, PL/SQL, DarkSoul plsql" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="fonts/icomoon/style.css">
+  <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+  <link rel="stylesheet" href="css/aos.css">
+  <link rel="stylesheet" href="css/glightbox.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <link rel="stylesheet" href="css/flatpickr.min.css">
+
+ 
+  <title>Write a PL/SQL procedure to display all student first name - DarkSoul Git Blogs</title>
+ 
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Organization",
+      "url": "https://darksoul-git.github.io/",
+      "name": "DarkSoul - Best UI/UX Designs and blogs for better understanding",
+      "description": "DarkSoul, your number-one source for all things. We're dedicated to giving you the very best of designs and blogs with an emphasis on technical, graphical, and logical",
+      "logo": "https://darksoul-git.github.io/images/logo.png",
+      "sameAs": [
+        "https://codepen.io/DarkSoul-/",
+        "https://dribbble.com/DarkSoulinDribble/"
+      ]
+    }
+    </script>
+  
+<style>
+  @font-face 
+		{
+			font-family: "icomoon";
+        	src: url("https://darksoul-git.github.io/fonts/icomoon/fonts/icomoon.ttf?");
+  			font-display: swap;
+		}
+  h2, h3{
+    font-family: 'Ubuntu', sans-serif;
+    
+}
+
+.content
+        {
+			font-family: "Work Sans", sans-serif !important;
+            text-align: justify; 
+            color: black;
+            line-height: 1.6;
+        }
+        .content h3, .content h2
+        {
+          font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        h4
+		{
+			font-weight: bolder !important;
+			color: white !important;
+          	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;	
+		}
+        .date{ color: black !important;}
+        .blog-entry{color: black !important;}
+     
+        textarea
+  {
+    margin-top: 55px;
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    resize: none;
+    font-size: large;
+    min-height: 400px;
+    width: 700px;
+    background-color: rgb(255, 255, 255);
+    border: 0.1px solid rgb(210, 210, 210);
+    border-radius: 8px;
+    box-shadow: 0px 0px 50px rgb(230, 230, 230);
+  	font-weight: 500;
+    color: rgb(0, 0, 0);
+  }
+      /* width */
+      ::-webkit-scrollbar 
+        {
+            width: 5px;
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track 
+        {
+            background-color: rgba(226, 247, 255, 0);
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb 
+        {
+        background: #adadad;
+        border-radius: 10px;
+        height: 10px;
+        width: 3px;
+        }
+
+        ::selection
+        {
+            background-color: #202020;
+            color: white;
+        }
+
+        .language-sql {
+  font-family: "Courier New", Courier, monospace;
+  background-color: #f4f4f4;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  color: #333;
+  display: block;
+  white-space: pre-wrap;
+  overflow-x: auto;
+}
+
+.language-sql::before {
+  content: "SQL";
+  display: block;
+  font-weight: bold;
+  color: #005b96;
+  margin-bottom: 5px;
+}
+
+.language-sql code {
+  color: #d14;
+}
+
+</style>
+<script type="text/javascript">
+  (function(c,l,a,r,i,t,y){
+    c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+    t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+    y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+  })(window, document, "clarity", "script", "iir3jmgyug");
+</script>
+	<!-- Google tag (gtag.js)-->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-015RX6GMQJ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  
+    gtag('config', 'G-015RX6GMQJ');
+  </script> 
+</head>
+<body>
+
+  <!-- Mobile Navigation Bar -->
+  <div class="site-mobile-menu site-navbar-target" id="mobilenav">
+      
+  </div>
+  <!-- Desktop Navigation Bar -->
+  <nav class="site-nav bg-dark" id="header">
+  
+  </nav>
+
+  <div class="site-cover site-cover-sm same-height overlay single-page bg-dark">
+    <div class="container">
+      <div class="row same-height justify-content-center">
+        <div class="col-md-6" > 
+          <div class="post-entry text-left" >
+            <h1 class="mb-4" style="font-weight: 800;">Write a PL/SQL Procedure to Display All Student First Name</h1>
+            <div class="post-meta align-items-center text-left">
+              <figure class="author-figure mb-0 me-3 d-inline-block"><img src="favicon.ico" alt="Image" class="img-fluid"  width="640" height="360"></figure>
+              <span class="d-inline-block mt-1">By DarkSoul</span>
+              <span>&nbsp;-&nbsp; August 31, 2024</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container">
+
+      <div class="row blog-entries element-animate">
+
+        <div class="main-content">
+
+          <div class="post-content-body content">
+            <div class="col-md-12 mb-4" style="display: flex;">
+              <img src="images/Write a PLSQL procedure to display all student first name.webp" alt="Write a PLSQL procedure to display all student first name - cover image" class="img-fluid rounded justify-content-center" style="margin: auto;">
+            </div>
+            <p>Write a PL/SQL procedure to display all the students first name registered for the course based on the course id. The procedure will take course id as an argument and it should display all the students first name registered for that course. <b>Use cursor</b>.</p>
+            <p>Consider the details given below:</p>
+            <p><b>(Note: In the below example course_id 201 is given as input to the FindStudentDetails procedure and the efore output is displayed as per the sample records)</b></p>
+            <p>Pl/SQL Procedure name: <b>FindStudentDetails</b></p>
+            <p>Input parameter : <b>cid in registration.courseid%type</b></p>
+            <p>Sample Records:</p>
+            <p>STUDENT TABLE:</p>
+
+            <pre>
+<b>STUDID</b>   <b>FIRSTNAME</b>   <b>LASTNAME</b>  <b>STREET</b>        <b>CITY</b>       <b>DOB</b>
+101      James       Peter     10th street   Mumbai     12-AUG-92
+102      Prem        Chand     12th street   Bangalore  05-AUG-93
+103      James       Peter     10th street   Chennai    21-SEP-91
+</pre>
+          
+            <p>REGISTRATION TABLE:</p>
+            <table class="table table-hover table-dark table-striped mt-4 mb-4" style="max-width: 400px;">
+              <thead>
+                <tr>
+                  <th>COURSEID</th>
+                  <th>STUDID</th>
+                  <th>DOJ</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>201</td>
+                  <td>101</td>
+                  <td>4-JAN-19</td>
+                </tr>
+                <tr>
+                  <td>201</td>
+                  <td>102</td>
+                  <td>7-FEB-19</td>
+                </tr>
+                <tr>
+                  <td>202</td>
+                  <td>103</td>
+                  <td>11-MAR-19</td>
+                </tr>
+            
+              </tbody>
+            </table>
+
+            <p><b>Functional Requirement</b></p>
+
+            <p>Procedure FindStudentDetails(cid)</p>
+
+            <p><b>Sample Input:</b></p>
+
+            <p>FindStudentDetails(201)</p>
+
+            <p><b>Sample Output</b></p>
+
+            <pre>
+Student Names are:
+James 
+Prem
+</pre>
+
+<p><strong>(Note: In the above example courseid 101 is given as input to the FindStudentDetails procedure and the output is displayed as per the sample records )</strong></p>
+
+             <p> <strong>(Hint: Use '/' to terminate the PLSQL block. Data is case sensitive.)</strong></p>
+      
+            <div class="col-md-12 mb-4" style="display: flex;">
+             
+               <textarea disabled id="plsql">
+
+    CREATE OR REPLACE PROCEDURE FindStudentDetails(cid in registration.courseid%type)
+    as
+    CURSOR c stud IS SELECT FirstName FROM STUDENT
+               JOIN registration USING (StudId) 
+               WHERE courseid = cid;
+    v_stud VARCHAR2(20);
+    BEGIN
+      OPEN c_stud;
+      dbms_output.put_line('Students Names are:  ');
+      LOOP
+        FETCH c_stud INTO v_stud;
+        EXIT WHEN c stud%NOTFOUND;
+        dbms_output.put_line(v_stud);
+      END LOOP;
+      CLOSE c_stud;
+    END FindStudentDetails;
+    /
+                  </textarea>
+               
+                  </div>
+                  <div class="col-md-12 mb-4" style="display: flex;">
+          
+                  <button id="button" class="btn btn-outline-dark m-auto" style="width: fit-content; height: fit-content;" onclick="copy()">Copy</button>
+            </div>
+                  <script>
+                    var textarea = document.getElementById('plsql');
+                    var button = document.getElementById('button');
+                      function copy() {
+            textarea.select();
+            navigator.clipboard.writeText(textarea.value);
+            button.innerHTML = 'COPIED!';
+        }
+                  </script>
+  <h2> Step-by-Step Guide to Creating a PL/SQL Procedure to Display Student First Names </h2> 
+  <p><b>Introduction to PL/SQL Procedures:</b><br> A PL/SQL procedure is a named block of PL/SQL code that performs a specific task. In this guide, we will walk through creating a procedure that displays the first names of students based on a given course ID. </p> 
+  <p><b>Understanding the Task:</b><br> The procedure will accept a course ID as input and then display all student first names that are enrolled in that course. This is useful for retrieving specific data based on user input, such as generating a list of students for a particular course. </p> 
+  <p><b>Writing the Procedure Code:</b><br> Let's break down the procedure code step by step. </p>
+  <p><b>Procedure Declaration:</b><br> We start by declaring the procedure with a name. Here, it is called <b>FindStudentDetails</b>: 
+    <pre><code class="language-sql">CREATE OR REPLACE PROCEDURE FindStudentDetails (cid IN registration.courseid%type)</code></pre> 
+    This line tells the database we are creating or replacing a procedure named <b>FindStudentDetails</b> that takes an input parameter <b>cid</b>. </p>
+  <p><b>Setting Up the Cursor:</b><br> We define a cursor to retrieve the student first names that match the given course ID: 
+    <pre><code class="language-sql">CURSOR c_stud IS SELECT FirstName FROM STUDENT 
+                 JOIN registration USING (StudId) 
+                 WHERE courseid = cid;</code></pre> This allows us to fetch student first names from the database where the course ID matches the input parameter. </p> 
+  <p><b>Opening the Cursor:</b><br> The next step is to open the cursor and prepare to fetch data: 
+    <pre><code class="language-sql">OPEN c_stud;</code></pre> This line opens the cursor and prepares it to start fetching student first names. </p> 
+  <p><b>Processing the Results:</b><br> Now, we loop through each row returned by the cursor and display the student first names: 
+    <pre><code class="language-sql"> LOOP 
+    FETCH c_stud INTO v_stud; 
+    EXIT WHEN c_stud%NOTFOUND; 
+    dbms_output.put_line(v_stud); 
+END LOOP; </code></pre> Each student first name is fetched and displayed one by one. The loop exits when there are no more names left to process. </p> 
+  <p><b>Closing the Cursor:</b><br> After processing all student first names, we close the cursor to free up resources: 
+    <pre><code class="language-sql">CLOSE c_stud;</code></pre> This ensures that the cursor is properly closed after use. </p> 
+  <p><b>Conclusion:</b><br> With this procedure in place, you can retrieve and display all student first names for a given course, providing a dynamic and efficient way to access specific data from the student database. </p>
+    
+          <div class="pt-5">
+            <p>Categories:  <a href="category-pl-sql.html">PL/SQL Hands-on</a>  Tags: <a href="#">#Write a PL/SQL Procedure to Display All Student First Name</a>, <a href="#">#PL/SQL</a></p>
+          </div>
+
+
+
+            <div class="comment-form-wrap pt-5">
+              <h3 class="mb-5" style="color: black;">Leave a comment</h3>
+              <form action="https://docs.google.com/forms/d/e/1FAIpQLSfy_pkp3cVBSPDNpS27p2F_zKnwC6O1dNXrFTscjn_XxITQ-w/formResponse" class="p-5 bg-light">
+                <div class="form-group">
+                  <label for="name">Name</label>
+                  <input type="text" class="form-control" id="name" name="entry.505217379" required autocomplete="on">
+                </div>
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" class="form-control" id="email" name="entry.1718450961" required autocomplete="on">
+                </div>
+                <div class="form-group">
+                  <label for="subject">Subject</label>
+                  <input type="text" class="form-control" id="subject" name="entry.390459327" required autocomplete="on">
+                </div>
+
+                <div class="form-group">
+                  <label for="message">Message</label>
+                  <textarea name="entry.117980495" id="message" cols="30" rows="10" class="form-control" required autocomplete="on"></textarea>
+                </div>
+                <div class="form-group">
+                  <input type="submit" value="Post Comment" class="btn btn-outline-dark">
+                </div>
+
+              </form>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- END main-content -->
+
+      </div>
+    </div>
+  </section>
+
+
+ 
+
+
+
+ <!-- /.site-footer -->
+ <footer class="site-footer bg-dark" id="footer">
+		
+ </footer>
+
+    <!-- Preloader -->
+    <div id="overlayer"></div>
+    <div class="loader">
+      <div class="spinner-border text-primary" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+    </div>
+    <script async src="js/header.js"></script>
+    <script async src="js/footer.js"></script>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+   
+
+    <script src="js/flatpickr.min.js"></script>
+
+
+    <script src="js/aos.js"></script>
+    <script src="js/glightbox.min.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/counter.js"></script>
+    <script src="js/custom.js"></script>
+
+    
+  </body>
+  </html>
