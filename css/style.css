@@ -50,7 +50,7 @@
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;
   --bs-body-color: #212529;
-  --bs-body-bg: #fff; }
+  --bs-body-bg: #ffffff; }
 
 *,
 *::before,
@@ -9797,7 +9797,8 @@ textarea {
   .retro-layout .h-entry.mb-30 {
     margin-bottom: 30px; }
   .retro-layout .h-entry .date {
-    font-size: 15px; }
+    font-size: 15px; 
+  }
   .retro-layout .h-entry.gradient {
     position: relative; }
     .retro-layout .h-entry.gradient:before {
@@ -10489,3 +10490,14 @@ textarea {
       .site-footer .social li a:hover {
         background: #fff;
         color: #214252; }
+
+        ::selection
+        {
+          background-color: white;
+          color: black;
+        }
+
+    .post-content-body p
+    {
+      font-size: medium !important;
+    }
