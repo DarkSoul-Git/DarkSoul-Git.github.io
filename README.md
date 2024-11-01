@@ -1,3 +1,5 @@
 # DarkSoul Git Blogs
 
-Explore travel blogs, tech insights, PL/SQL solutions, and 3D model previews on DarkSoul Git Blogs. Your go-to resource for tech and travel enthusiasts.
+Explore PL/SQL Hands-on with solutions and Oracle EBS blogs to upgrade yourself from beginner to expert as a Technical/Functional Consultant on DarkSoul Git Blogs website.
+
+# Happy learning fellas!
