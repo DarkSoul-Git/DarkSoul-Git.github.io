@@ -49,79 +49,90 @@
     </script>
   
 <style>
-  @font-face 
+ @font-face 
 		{
 			font-family: "icomoon";
         	src: url("https://darksoul-git.github.io/fonts/icomoon/fonts/icomoon.ttf?");
   			font-display: swap;
 		}
-  h2, h3{
-    font-family: 'Ubuntu', sans-serif;
+  h2{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;	
     
 }
-
-.content
-        {
-			font-family: "Work Sans", sans-serif !important;
-            text-align: justify; 
-            color: black;
-            line-height: 1.6;
-        }
-        .content h3, .content h2
-        {
-          font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        }
-        h4
+h4
 		{
 			font-weight: bolder !important;
 			color: white !important;
           	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;	
 		}
+    p
+    {
+      font-size: large;
+    }
+.content
+        {
+			      font-family: "Work Sans", sans-serif !important;
+            text-align: justify; 
+            color: black;
+            line-height: 1.6;
+        }
+        .content h3, .content h2, .content .h1
+        {
+          margin-top: 60px;
+          margin-bottom: 40px;
+          font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif !important;
+        }
         .date{ color: black !important;}
         .blog-entry{color: black !important;}
-     
+        .note
+        {
+            margin-top: 50px;
+            display: flex;
+        }
+        .note p
+        {
+            font-size: large !important;
+            width: 90%;
+            margin: auto;
+        }
+        .note p a 
+        {
+          color: rgb(171, 162, 255);
+        }
+        .tag
+        {
+          font-size: larger;
+          font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif !important;
+        }
+        .tag a
+        {
+          color: rgb(255, 255, 255);
+          font-weight: 600;
+          font-style: italic;
+        }
+        pre
+        {
+          font-size: large;
+        }
+        strong
+        {
+          font-size: larger;
+        }
         textarea
-  {
-    margin-top: 55px;
-    margin-bottom: 15px;
-    margin-left: auto;
-    margin-right: auto;
-    resize: none;
-    font-size: large;
-    min-height: 400px;
-    width: 700px;
-    background-color: rgb(255, 255, 255);
-    border: 0.1px solid rgb(210, 210, 210);
-    border-radius: 8px;
-    box-shadow: 0px 0px 50px rgb(230, 230, 230);
-  	font-weight: 500;
-    color: rgb(0, 0, 0);
-  }
-      /* width */
-      ::-webkit-scrollbar 
         {
-            width: 5px;
-        }
-
-        /* Track */
-        ::-webkit-scrollbar-track 
-        {
-            background-color: rgba(226, 247, 255, 0);
-        }
-
-        /* Handle */
-        ::-webkit-scrollbar-thumb 
-        {
-        background: #adadad;
-        border-radius: 10px;
-        height: 10px;
-        width: 3px;
-        }
-
-        ::selection
-        {
-            background-color: #202020;
-            color: white;
+          margin-top: 55px;
+          margin-bottom: 15px;
+          margin-left: auto;
+          margin-right: auto;
+          resize: none;
+          font-size: large;
+          min-height: 400px;
+          width: 700px;
+          background-color: rgb(255, 255, 255);
+          border: 0.1px solid rgb(210, 210, 210);
+          border-radius: 8px;
+          font-weight: 500;
+          color: rgb(0, 0, 0);
         }
 
         .language-sql {
@@ -166,33 +177,17 @@
     gtag('config', 'G-015RX6GMQJ');
   </script> 
 </head>
-<body>
+<body class="bg-gradient">
 
   <!-- Mobile Navigation Bar -->
   <div class="site-mobile-menu site-navbar-target" id="mobilenav">
       
   </div>
   <!-- Desktop Navigation Bar -->
-  <nav class="site-nav bg-black" id="header">
+  <nav class="site-nav bg-transparent" id="header">
   
   </nav>
 
-  <div class="site-cover site-cover-sm same-height overlay single-page bg-dark">
-    <div class="container">
-      <div class="row same-height justify-content-center">
-        <div class="col-md-6" > 
-          <div class="post-entry text-left" >
-            <h1 class="mb-4" style="font-weight: 800;"> Write a PL/SQL Trigger to Insert Employee Records Into a Table When Deleted</h1>
-            <div class="post-meta align-items-center text-left">
-              <figure class="author-figure mb-0 me-3 d-inline-block"><img src="favicon.ico" alt="Image" class="img-fluid"  width="640" height="360"></figure>
-              <span class="d-inline-block mt-1">By DarkSoul</span>
-              <span>&nbsp;-&nbsp; August 10, 2024</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 
   <section class="section">
     <div class="container">
@@ -201,13 +196,19 @@
 
         <div class="main-content">
 
-          <div class="post-content-body content">
+          <div class="post-content-body content col-md-6 mb-4 m-auto text-white">
             <div class="col-md-12 mb-4" style="display: flex;">
-              <img src="images/Write a PLSQL Trigger to Insert Employee Records Into a Table When Deleted.webp" alt="Write a PLSQL Trigger to Insert Employee Records Into a Table When Deleted - cover image" class="img-fluid rounded justify-content-center" style="margin: auto;">
+              <img src="images/Write a PLSQL Trigger to Insert Employee Records Into a Table When Deleted.webp" alt="Write a PLSQL Trigger to Insert Employee Records Into a Table When Deleted - cover image" class="img-fluid rounded justify-content-center" style="margin: auto; border-radius: 15px !important;">
             </div>
-            <p>An HR system has an Employee table that holds a row for each employee within the company. Each record in the table has a employee id, employee name and manager column, that holds the id for the employee's manager. Write a trigger so that when an employee record is deleted, the record details need to be inserted into an table called Employee_archive along with the deleted date.</p>
-              <p>Table: EMPLOYEE</p>
-            <table class="table table-hover table-dark table-striped mt-4 mb-4" style="max-width: 400px;">
+            <h1 class="mb-4" style="font-weight: bold; margin-top: 90px; text-align: center;"> Write a PL/SQL Trigger to Insert Employee Records Into a Table When Deleted</h1>
+            <div class="post-meta align-items-center text-center mt-5">
+              <figure class="author-figure mb-0 me-3 d-inline-block"><img src="images/darksoul.jpg" alt="Author - DarkSoul" class="img-fluid"  width="640" height="360"></figure>
+              <span class="d-inline-block mt-1 text-white">By DarkSoul</span>
+              <span class="text-white">&nbsp;-&nbsp; August 10, 2024</span>
+            </div>
+            <p class="mt-5 mb-5">An HR system has an Employee table that holds a row for each employee within the company. Each record in the table has a employee id, employee name and manager column, that holds the id for the employee's manager. Write a trigger so that when an employee record is deleted, the record details need to be inserted into an table called Employee_archive along with the deleted date.</p>
+              <p class="mb-5">Table: EMPLOYEE</p>
+            <table class="table table-hover table-dark table-striped mt-4 mb-4 m-auto" style="min-width: 250px !important; width: fit-content;">
               <thead>
                 <tr>
                   <th>COLUMN</th>
@@ -236,7 +237,7 @@
             </table>
 
             <p>Table: EMPLOYEE_ARCHIVE</p>
-            <table class="table table-hover table-dark table-striped mt-4 mb-4" style="max-width: 400px;">
+            <table class="table table-hover table-dark table-striped mt-4 mb-4 m-auto" style="min-width: 250px !important; width: fit-content;">
               <thead>
                 <tr>
                   <th>COLUMN</th>
@@ -288,7 +289,7 @@
                   </div>
                   <div class="col-md-12 mb-4" style="display: flex;">
           
-                  <button id="button" class="btn btn-outline-dark m-auto" style="width: fit-content; height: fit-content;" onclick="copy()">Copy</button>
+                  <button id="button" class="btn btn-outline-light m-auto" style="width: fit-content; height: fit-content;" onclick="copy()">Copy</button>
             </div>
                   <script>
                     var textarea = document.getElementById('plsql');
@@ -299,29 +300,29 @@
             button.innerHTML = 'COPIED!';
         }
                   </script>
-          <h2>
+          <h2 class="mb-5">
             Step-by-Step Guide to Creating the Trigger
           </h2>
-          <p><b>Introduction to Triggers:</b><br>
+          <p class="mb-5"><b>Introduction to Triggers:</b><br>
             First, understand that a trigger is a special kind of stored procedure that automatically executes when a specific event occurs in the database.
             In this guide, we’ll focus on creating a trigger that helps archive employee records automatically when they are deleted from the main table.</p>
-          <p><b>Choosing the Event:</b><br>
+          <p class="mb-5"><b>Choosing the Event:</b><br>
             In this case, we want the trigger to execute before an employee record is deleted from the Employee table. This allows us to capture and save the record in an archive table before it’s removed.</p>
-          <p><b>Writing the Trigger Code:</b><br>
+          <p class="mb-5"><b>Writing the Trigger Code:</b><br>
             Let's break down the trigger code step by step.</p>
-          <p><b>Trigger Declaration:</b><br>
+          <p class="mt-5 mb-5"><b>Trigger Declaration:</b><br>
             We start by declaring the trigger with a name. Here, it's called <b>archive</b>:
             <pre><code class="language-sql">CREATE TRIGGER archive</code></pre>
             This line tells the database we're creating a new trigger called <b>archive</b>.</p>
-          <p><b>Specifying the Timing and Event:</b><br>
+          <p class="mt-5 mb-5"><b>Specifying the Timing and Event:</b><br>
             Next, we specify when this trigger should run and on which table. We want it to run before a row is deleted from the Employee table:
             <pre><code class="language-sql">BEFORE DELETE ON Employee</code></pre>
             This means the trigger will activate right before a deletion occurs.</p>
-          <p><b>Defining the Scope:</b><br>
+          <p class="mt-5 mb-5"><b>Defining the Scope:</b><br>
             We need the trigger to execute for each row that's deleted, so we include:
             <pre><code class="language-sql">FOR EACH ROW</code></pre>
             This ensures the trigger processes each row individually.</p>
-          <p><b>Writing the Trigger Body:</b><br>
+          <p class="mt-5 mb-5"><b>Writing the Trigger Body:</b><br>
             Now, we define what the trigger should do. In this case, we want to insert the deleted employee record into an archive table:
             <pre><code class="language-sql">
 BEGIN
@@ -332,42 +333,45 @@ END;
             <b>BEGIN</b> and <b>END</b> are used to enclose the actions the trigger will perform.<br>
             The <b>INSERT INTO</b> statement copies data from the deleted record (referenced by <b>:old</b>) into the `Employee_archive` table, along with the current date and time (using <b>SYSDATE</b>).
           </p>
-          <p><b>Conclusion:</b><br>
+          <b>BEGIN</b> and <b>END</b> are used to enclose the actions the trigger will perform.<br>
+          <p class="mt-5 mb-5"><b>Conclusion:</b><br>
             With this trigger in place, every time an employee record is deleted from the Employee table, it is automatically archived in the `Employee_archive` table. This ensures you have a backup of important data before it gets permanently removed.
           </p>
 
           <div class="pt-5">
-            <p>Categories:  <a href="category-pl-sql.html">PL/SQL Hands-on</a>  Tags: <a href="#">#Write a PL/SQL Trigger to insert employee records into a table when deleted</a>, <a href="#">#PL/SQL</a></p>
+            <p class="tag">Categories:  <a href="category-pl-sql.html">PL/SQL Hands-on</a>  Tags: <a href="#">#Write a PL/SQL Trigger to insert employee records into a table when deleted</a>, <a href="#">#PL/SQL</a></p>
           </div>
 
 
 
-            <div class="comment-form-wrap pt-5">
-              <h3 class="mb-5" style="color: black;">Leave a comment</h3>
-              <form action="https://docs.google.com/forms/d/e/1FAIpQLSfy_pkp3cVBSPDNpS27p2F_zKnwC6O1dNXrFTscjn_XxITQ-w/formResponse" class="p-5 bg-light">
-                <div class="form-group">
-                  <label for="name">Name</label>
-                  <input type="text" class="form-control" id="name" name="entry.505217379" required autocomplete="on">
-                </div>
-                <div class="form-group">
-                  <label for="email">Email</label>
-                  <input type="email" class="form-control" id="email" name="entry.1718450961" required autocomplete="on">
-                </div>
-                <div class="form-group">
-                  <label for="subject">Subject</label>
-                  <input type="text" class="form-control" id="subject" name="entry.390459327" required autocomplete="on">
-                </div>
+          <div class="comment-form-wrap pt-5 m-auto">
+            
+            <form action="https://docs.google.com/forms/d/e/1FAIpQLSfy_pkp3cVBSPDNpS27p2F_zKnwC6O1dNXrFTscjn_XxITQ-w/formResponse" class="p-5 bg-transparent text-white m-auto">
+              <h3 class="mb-5" style="color: rgb(255, 255, 255);">Leave a comment</h3>
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" name="entry.505217379" required autocomplete="on">
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" name="entry.1718450961" required autocomplete="on">
+              </div>
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" class="form-control" id="subject" name="entry.390459327" required autocomplete="on">
+              </div>
 
-                <div class="form-group">
-                  <label for="message">Message</label>
-                  <textarea name="entry.117980495" id="message" cols="30" rows="10" class="form-control" required autocomplete="on"></textarea>
-                </div>
-                <div class="form-group">
-                  <input type="submit" value="Post Comment" class="btn btn-outline-dark">
-                </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea name="entry.117980495" id="message" cols="30" rows="10" class="form-control" required autocomplete="on"></textarea>
+              </div>
+              <div class="form-group m-auto text-center mt-4">
+                <input type="submit" value="Post Comment" class="btn btn-outline-dark">
+              </div>
 
-              </form>
-            </div>
+            </form>
+          </div>
+
 
           </div>
 

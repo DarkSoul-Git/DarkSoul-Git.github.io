@@ -55,73 +55,84 @@
         	src: url("https://darksoul-git.github.io/fonts/icomoon/fonts/icomoon.ttf?");
   			font-display: swap;
 		}
-  h2, h3{
-    font-family: 'Ubuntu', sans-serif;
+  h2{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;	
     
 }
-
-.content
-        {
-			font-family: "Work Sans", sans-serif !important;
-            text-align: justify; 
-            color: black;
-            line-height: 1.6;
-        }
-        .content h3, .content h2
-        {
-          font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        }
-        h4
+h4
 		{
 			font-weight: bolder !important;
 			color: white !important;
           	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;	
 		}
+    p
+    {
+      font-size: large;
+    }
+.content
+        {
+			      font-family: "Work Sans", sans-serif !important;
+            text-align: justify; 
+            color: black;
+            line-height: 1.6;
+        }
+        .content h3, .content h2, .content .h1
+        {
+          margin-top: 60px;
+          margin-bottom: 40px;
+          font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif !important;
+        }
         .date{ color: black !important;}
         .blog-entry{color: black !important;}
-     
+        .note
+        {
+            margin-top: 50px;
+            display: flex;
+        }
+        .note p
+        {
+            font-size: large !important;
+            width: 90%;
+            margin: auto;
+        }
+        .note p a 
+        {
+          color: rgb(171, 162, 255);
+        }
+        .tag
+        {
+          font-size: larger;
+          font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif !important;
+        }
+        .tag a
+        {
+          color: rgb(255, 255, 255);
+          font-weight: 600;
+          font-style: italic;
+        }
+        pre
+        {
+          font-size: large;
+        }
+        strong
+        {
+          font-size: larger;
+        }
         textarea
-  {
-    margin-top: 55px;
-    margin-bottom: 15px;
-    margin-left: auto;
-    margin-right: auto;
-    resize: none;
-    font-size: large;
-    min-height: 400px;
-    width: 700px;
-    background-color: rgb(255, 255, 255);
-    border: 0.1px solid rgb(210, 210, 210);
-    border-radius: 8px;
-    box-shadow: 0px 0px 50px rgb(230, 230, 230);
-  	font-weight: 500;
-    color: rgb(0, 0, 0);
-  }
-      /* width */
-      ::-webkit-scrollbar 
         {
-            width: 5px;
-        }
-
-        /* Track */
-        ::-webkit-scrollbar-track 
-        {
-            background-color: rgba(226, 247, 255, 0);
-        }
-
-        /* Handle */
-        ::-webkit-scrollbar-thumb 
-        {
-        background: #adadad;
-        border-radius: 10px;
-        height: 10px;
-        width: 3px;
-        }
-
-        ::selection
-        {
-            background-color: #202020;
-            color: white;
+          margin-top: 55px;
+          margin-bottom: 15px;
+          margin-left: auto;
+          margin-right: auto;
+          resize: none;
+          font-size: large;
+          min-height: 400px;
+          width: 700px;
+          background-color: rgb(255, 255, 255);
+          border: 0.1px solid rgb(210, 210, 210);
+          border-radius: 8px;
+          font-weight: 500;
+          color: rgb(0, 0, 0);
         }
 
         .language-sql {
@@ -166,33 +177,17 @@
     gtag('config', 'G-015RX6GMQJ');
   </script> 
 </head>
-<body>
+<body class="bg-gradient">
 
   <!-- Mobile Navigation Bar -->
   <div class="site-mobile-menu site-navbar-target" id="mobilenav">
       
   </div>
   <!-- Desktop Navigation Bar -->
-  <nav class="site-nav bg-black" id="header">
+  <nav class="site-nav bg-transparent" id="header">
   
   </nav>
 
-  <div class="site-cover site-cover-sm same-height overlay single-page bg-dark">
-    <div class="container">
-      <div class="row same-height justify-content-center">
-        <div class="col-md-6" > 
-          <div class="post-entry text-left" >
-            <h1 class="mb-4" style="font-weight: 800;">Create a Package pkcourse with Specification and Body</h1>
-            <div class="post-meta align-items-center text-left">
-              <figure class="author-figure mb-0 me-3 d-inline-block"><img src="favicon.ico" alt="Image" class="img-fluid"  width="640" height="360"></figure>
-              <span class="d-inline-block mt-1">By DarkSoul</span>
-              <span>&nbsp;-&nbsp; September 24, 2024</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 
   <section class="section">
     <div class="container">
@@ -201,27 +196,33 @@
 
         <div class="main-content">
 
-          <div class="post-content-body content">
+          <div class="post-content-body content col-md-6 mb-4 m-auto text-white">
             <div class="col-md-12 mb-4" style="display: flex;">
-              <img src="images/Create a Package pkcourse with Specification and Body.webp" alt="Create a Package pkcourse with Specification and Body - cover image" class="img-fluid rounded justify-content-center" style="margin: auto;">
+              <img src="images/Create a Package pkcourse with Specification and Body.webp" alt="Create a Package pkcourse with Specification and Body - cover image" class="img-fluid rounded justify-content-center" style="margin: auto; border-radius: 15px !important;">
             </div>
-            <p>Create a package <b>pkcourse</b> with specification and body. The package has a procedure named <b>findCourse</b> which accepts the student Id as input and prints the student's first name along with the end date of course duration. If no such student id is present, print "<b>No Student Found</b>".</p>
-            <p>Use the skeleton file to develop the package</p>
-            <p>PACKAGE <b>pkcourse</b> PROCEDURE <b>findCourse</b></p>
-            <p><b>Package name</b>: pkcourse</p>
-            <p><b>Procedure name</b>: findCourse</p>
-            <p><b>Input Parameter</b>: nstudId Registration.studid%type</p>
-            <p>The output should be in the following format:</p>
+            <h1 class="mb-4" style="font-weight: bold; margin-top: 90px; text-align: center;">Create a Package pkcourse with Specification and Body</h1>
+            <div class="post-meta align-items-center text-center mt-5">
+              <figure class="author-figure mb-0 me-3 d-inline-block"><img src="images/darksoul.jpg" alt="Author - DarkSoul" class="img-fluid"  width="640" height="360"></figure>
+              <span class="d-inline-block mt-1 text-white">By DarkSoul</span>
+              <span class="text-white">&nbsp;-&nbsp; September 24, 2024</span>
+            </div>
+            <p class="mt-5 mb-5">Create a package <b>pkcourse</b> with specification and body. The package has a procedure named <b>findCourse</b> which accepts the student Id as input and prints the student's first name along with the end date of course duration. If no such student id is present, print "<b>No Student Found</b>".</p>
+            <p class="mb-5">Use the skeleton file to develop the package</p>
+            <p class="mb-5">PACKAGE <b>pkcourse</b> PROCEDURE <b>findCourse</b></p>
+            <p class="mb-5"><b>Package name</b>: pkcourse</p>
+            <p class="mb-5"><b>Procedure name</b>: findCourse</p>
+            <p class="mb-5"><b>Input Parameter</b>: nstudId Registration.studid%type</p>
+            <p class="mb-5">The output should be in the following format:</p>
 
-            <p><b>Sample Data:</b></p>
+            <p class="mb-5"><b>Sample Data:</b></p>
 
-            <p><b>firstname</b> will complete the course on <b>14-MAY-22</b></p>
+            <p class="mb-5"><b>firstname</b> will complete the course on <b>14-MAY-22</b></p>
 
-            <p><b>Sample Output:</b></p>
+            <p class="mb-5"><b>Sample Output:</b></p>
 
-            <p><b>Peter</b> will complete the course on <b>20-APR-18</b></p>
+            <p class="mb-5"><b>Peter</b> will complete the course on <b>20-APR-18</b></p>
 
-            <p> <strong>(Hint: Course end date is calculated using date of joining and course duration)</strong></p>
+            <p class="mb-5"> <strong>(Hint: Course end date is calculated using date of joining and course duration)</strong></p>
       
             <div class="col-md-12 mb-4" style="display: flex;">
              
@@ -256,7 +257,7 @@
                   </div>
                   <div class="col-md-12 mb-4" style="display: flex;">
           
-                  <button id="button" class="btn btn-outline-dark m-auto" style="width: fit-content; height: fit-content;" onclick="copy()">Copy</button>
+                  <button id="button" class="btn btn-outline-light m-auto" style="width: fit-content; height: fit-content;" onclick="copy()">Copy</button>
             </div>
                   <script>
                     var textarea = document.getElementById('plsql');
@@ -268,24 +269,24 @@
         }
                   </script>
 
-<h2>Step-by-Step Guide to Creating a PL/SQL Package to Find Course Completion Date</h2>
-<p><b>Introduction to PL/SQL Packages:</b><br>
+<h2 class="mb-5">Step-by-Step Guide to Creating a PL/SQL Package to Find Course Completion Date</h2>
+<p class="mb-5"><b>Introduction to PL/SQL Packages:</b><br>
 A PL/SQL package is a schema object that groups logically related PL/SQL types, items, and subprograms. In this guide, we will create a package that retrieves a student's course completion date based on a given student ID.</p>
 
-<p><b>Understanding the Task:</b><br>
+<p class="mb-5"><b>Understanding the Task:</b><br>
 The package will include a procedure that accepts a student ID as input and displays details such as the student's first name and the expected course completion date. This is useful for quickly fetching student course information.</p>
 
-<p><b>Writing the Package Code:</b><br> 
+<p class="mb-5"><b>Writing the Package Code:</b><br> 
 Let's break down the package code step by step.</p>
 
-<p><b>Package Specification:</b><br>
+<p class="mt-5 mb-5"><b>Package Specification:</b><br>
 We start by declaring the package, naming it <b>pkcourse</b>, and including a procedure <b>findCourse</b>:
 <pre><code class="language-sql">CREATE OR REPLACE PACKAGE pkcourse AS
 PROCEDURE findCourse(nstudId Registration.studid%type);
 END pkcourse;</code></pre>
 This specifies the package with a procedure that takes the <b>nstudId</b> parameter, representing a student ID.</p>
 
-<p><b>Package Body:</b><br>
+<p class="mt-5 mb-5"><b>Package Body:</b><br>
 The package body contains the implementation of the procedure:
 <pre><code class="language-sql">CREATE OR REPLACE PACKAGE BODY pkcourse AS
 PROCEDURE findCourse(nstudId Registration.studid%type) AS
@@ -305,7 +306,7 @@ END findCourse;
 END pkcourse;</code></pre>
 The body includes the actual logic for fetching and displaying the student's course completion date.</p>
 
-<p><b>Fetching Data:</b><br>
+<p class="mt-5 mb-5"><b>Fetching Data:</b><br>
 We use a `SELECT` query to fetch the student's first name and calculate the course completion date by adding the date of joining (DOJ) and the course duration:
 <pre><code class="language-sql">SELECT FirstName, DOJ + Duration INTO v_fname, v_date 
 FROM STUDENT 
@@ -314,53 +315,55 @@ JOIN COURSE USING (courseid)
 WHERE StudId = nstudId;</code></pre>
 This query retrieves the student's first name and course completion date based on the provided student ID.</p>
 
-<p><b>Displaying the Data:</b><br>
+<p class="mt-5 mb-5"><b>Displaying the Data:</b><br>
 Once the data is fetched, we output the results using <b>dbms_output.put_line</b>:
 <pre><code class="language-sql">dbms_output.put_line(v_fname ||' will complete the course on '||v_date);</code></pre>
 This displays a message like: `John will complete the course on 15-MAR-2025`.</p>
 
-<p><b>Handling Exceptions:</b><br>
+<p class="mt-5 mb-5"><b>Handling Exceptions:</b><br>
 In case no student is found, we handle the exception with:
 <pre><code class="language-sql">EXCEPTION
 WHEN NO_DATA_FOUND THEN 
     dbms_output.put_line('No Student Found');</code></pre>
 This ensures that a clear message is shown if the student ID doesn't exist in the database.</p>
 
-<p><b>Conclusion:</b><br>
+<p class="mt-5 mb-5"><b>Conclusion:</b><br>
 By following this guide, you’ve successfully created a PL/SQL package that retrieves and displays a student's course completion date based on their student ID. This package is highly useful for dynamically accessing course information from the database.</p>
 
           <div class="pt-5">
-            <p>Categories:  <a href="category-pl-sql.html">PL/SQL Hands-on</a>  Tags: <a href="#">#Create a package pkcourse with specification and body</a>, <a href="#">#PL/SQL</a></p>
+            <p class="tag">Categories:  <a href="category-pl-sql.html">PL/SQL Hands-on</a>  Tags: <a href="#">#Create a package pkcourse with specification and body</a>, <a href="#">#PL/SQL</a></p>
           </div>
 
 
 
-            <div class="comment-form-wrap pt-5">
-              <h3 class="mb-5" style="color: black;">Leave a comment</h3>
-              <form action="https://docs.google.com/forms/d/e/1FAIpQLSfy_pkp3cVBSPDNpS27p2F_zKnwC6O1dNXrFTscjn_XxITQ-w/formResponse" class="p-5 bg-light">
-                <div class="form-group">
-                  <label for="name">Name</label>
-                  <input type="text" class="form-control" id="name" name="entry.505217379" required autocomplete="on">
-                </div>
-                <div class="form-group">
-                  <label for="email">Email</label>
-                  <input type="email" class="form-control" id="email" name="entry.1718450961" required autocomplete="on">
-                </div>
-                <div class="form-group">
-                  <label for="subject">Subject</label>
-                  <input type="text" class="form-control" id="subject" name="entry.390459327" required autocomplete="on">
-                </div>
+          <div class="comment-form-wrap pt-5 m-auto">
+            
+            <form action="https://docs.google.com/forms/d/e/1FAIpQLSfy_pkp3cVBSPDNpS27p2F_zKnwC6O1dNXrFTscjn_XxITQ-w/formResponse" class="p-5 bg-transparent text-white m-auto">
+              <h3 class="mb-5" style="color: rgb(255, 255, 255);">Leave a comment</h3>
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" name="entry.505217379" required autocomplete="on">
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" name="entry.1718450961" required autocomplete="on">
+              </div>
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" class="form-control" id="subject" name="entry.390459327" required autocomplete="on">
+              </div>
 
-                <div class="form-group">
-                  <label for="message">Message</label>
-                  <textarea name="entry.117980495" id="message" cols="30" rows="10" class="form-control" required autocomplete="on"></textarea>
-                </div>
-                <div class="form-group">
-                  <input type="submit" value="Post Comment" class="btn btn-outline-dark">
-                </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea name="entry.117980495" id="message" cols="30" rows="10" class="form-control" required autocomplete="on"></textarea>
+              </div>
+              <div class="form-group m-auto text-center mt-4">
+                <input type="submit" value="Post Comment" class="btn btn-outline-dark">
+              </div>
 
-              </form>
-            </div>
+            </form>
+          </div>
+
 
           </div>
 

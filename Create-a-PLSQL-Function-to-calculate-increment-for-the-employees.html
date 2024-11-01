@@ -49,80 +49,93 @@
     </script>
   
 <style>
-  @font-face 
+ @font-face 
 		{
 			font-family: "icomoon";
         	src: url("https://darksoul-git.github.io/fonts/icomoon/fonts/icomoon.ttf?");
   			font-display: swap;
 		}
-  h2, h3{
-    font-family: 'Ubuntu', sans-serif;
+  h2{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;	
     
 }
-
-.content
-        {
-			font-family: "Work Sans", sans-serif !important;
-            text-align: justify; 
-            color: black;
-            line-height: 1.6;
-        }
-        .content h3, .content h2
-        {
-          font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        }
-        h4
+h4
 		{
 			font-weight: bolder !important;
 			color: white !important;
           	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;	
 		}
+    p
+    {
+      font-size: large;
+    }
+.content
+        {
+			      font-family: "Work Sans", sans-serif !important;
+            text-align: justify; 
+            color: black;
+            line-height: 1.6;
+        }
+        .content h3, .content h2, .content .h1
+        {
+          margin-top: 60px;
+          margin-bottom: 40px;
+          font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif !important;
+        }
         .date{ color: black !important;}
         .blog-entry{color: black !important;}
-     
+        .note
+        {
+            margin-top: 50px;
+            display: flex;
+        }
+        .note p
+        {
+            font-size: large !important;
+            width: 90%;
+            margin: auto;
+        }
+        .note p a 
+        {
+          color: rgb(171, 162, 255);
+        }
+        .tag
+        {
+          font-size: larger;
+          font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif !important;
+        }
+        .tag a
+        {
+          color: rgb(255, 255, 255);
+          font-weight: 600;
+          font-style: italic;
+        }
+        pre
+        {
+          font-size: large;
+        }
+        strong
+        {
+          font-size: larger;
+        }
         textarea
-  {
-    margin-top: 55px;
-    margin-bottom: 15px;
-    margin-left: auto;
-    margin-right: auto;
-    resize: none;
-    font-size: large;
-    min-height: 400px;
-    width: 700px;
-    background-color: rgb(255, 255, 255);
-    border: 0.1px solid rgb(210, 210, 210);
-    border-radius: 8px;
-    box-shadow: 0px 0px 50px rgb(230, 230, 230);
-  	font-weight: 500;
-    color: rgb(0, 0, 0);
-  }
-      /* width */
-      ::-webkit-scrollbar 
         {
-            width: 5px;
+          margin-top: 55px;
+          margin-bottom: 15px;
+          margin-left: auto;
+          margin-right: auto;
+          resize: none;
+          font-size: large;
+          min-height: 400px;
+          width: 700px;
+          background-color: rgb(255, 255, 255);
+          border: 0.1px solid rgb(210, 210, 210);
+          border-radius: 8px;
+          font-weight: 500;
+          color: rgb(0, 0, 0);
         }
+     
 
-        /* Track */
-        ::-webkit-scrollbar-track 
-        {
-            background-color: rgba(226, 247, 255, 0);
-        }
-
-        /* Handle */
-        ::-webkit-scrollbar-thumb 
-        {
-        background: #adadad;
-        border-radius: 10px;
-        height: 10px;
-        width: 3px;
-        }
-
-        ::selection
-        {
-            background-color: #202020;
-            color: white;
-        }
 </style>
 <script type="text/javascript">
   (function(c,l,a,r,i,t,y){
@@ -141,33 +154,17 @@
     gtag('config', 'G-015RX6GMQJ');
   </script> 
 </head>
-<body>
+<body class="bg-gradient">
 
   <!-- Mobile Navigation Bar -->
   <div class="site-mobile-menu site-navbar-target" id="mobilenav">
       
   </div>
   <!-- Desktop Navigation Bar -->
-  <nav class="site-nav bg-black" id="header">
+  <nav class="site-nav bg-transparent" id="header">
   
   </nav>
 
-  <div class="site-cover site-cover-sm same-height overlay single-page bg-dark">
-    <div class="container">
-      <div class="row same-height justify-content-center">
-        <div class="col-md-6" > 
-          <div class="post-entry text-left" >
-            <h1 class="mb-4" style="font-weight: 800;">Create a PLSQL Function to Calculate Increment for the Employees</h1>
-            <div class="post-meta align-items-center text-left">
-              <figure class="author-figure mb-0 me-3 d-inline-block"><img src="favicon.ico" alt="Image" class="img-fluid"  width="640" height="360"></figure>
-              <span class="d-inline-block mt-1">By DarkSoul</span>
-              <span>&nbsp;-&nbsp; June 13, 2024</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 
   <section class="section">
     <div class="container">
@@ -176,13 +173,19 @@
 
         <div class="main-content">
 
-          <div class="post-content-body content">
+          <div class="post-content-body content col-md-6 mb-4 m-auto text-white">
             <div class="col-md-12 mb-4" style="display: flex;">
-              <img src="images/Create-a-PLSQL-Function-to-calculate-increment-for-the-employees.webp" alt="Create-a-PLSQL-Function-to-calculate-increment-for-the-employees - cover image" class="img-fluid rounded justify-content-center" style="margin: auto;">
+              <img src="images/Create-a-PLSQL-Function-to-calculate-increment-for-the-employees.webp" alt="Create-a-PLSQL-Function-to-calculate-increment-for-the-employees - cover image" class="img-fluid rounded justify-content-center" style="margin: auto; border-radius: 15px !important;">
             </div>
-            <p>Create a PL/SQL Function to calculate increment for the employees. Function will take increment percentage and salary as input and return increment amount as output.</p>
-              <p>Table: EMPLOYEE</p>
-            <table class="table table-hover table-dark table-striped mt-4 mb-4" style="max-width: 400px;">
+            <h1 class="mb-4" style="font-weight: bold; margin-top: 90px; text-align: center;">Create a PLSQL Function to Calculate Increment for the Employees</h1>
+            <div class="post-meta align-items-center text-center mt-5">
+              <figure class="author-figure mb-0 me-3 d-inline-block"><img src="images/darksoul.jpg" alt="Author - DarkSoul" class="img-fluid"  width="640" height="360"></figure>
+              <span class="d-inline-block mt-1 text-white">By DarkSoul</span>
+              <span class="text-white">&nbsp;-&nbsp; June 13, 2024</span>
+            </div>
+            <p class="mt-5 mb-5">Create a PL/SQL Function to calculate increment for the employees. Function will take increment percentage and salary as input and return increment amount as output.</p>
+              <p class="mb-5">Table: EMPLOYEE</p>
+            <table class="table table-hover table-dark table-striped mt-4 mb-4 m-auto" style="  min-width: 250px !important; width: fit-content;">
               <thead>
                 <tr>
                   <th>COLUMN</th>
@@ -209,7 +212,7 @@
               </tbody>
             </table>
 
-            <p> 
+            <p class="mb-5"> 
                 <b>Functional Requirement:</b>
 
                 FUNCTION calculate_Increment(incperc number, salary number)
@@ -233,7 +236,7 @@
                   </div>
                   <div class="col-md-12 mb-4" style="display: flex;">
           
-                  <button id="button" class="btn btn-outline-dark m-auto" style="width: fit-content; height: fit-content;" onclick="copy()">Copy</button>
+                  <button id="button" class="btn btn-outline-light m-auto" style="width: fit-content; height: fit-content;" onclick="copy()">Copy</button>
             </div>
                   <script>
                     var textarea = document.getElementById('plsql');
@@ -245,31 +248,31 @@
         }
                   </script>
 
-                  <p>
+                  <p class="mb-5">
                     Here’s a simple, step-by-step procedure for creating a PL/SQL function to calculate employee increments:
                   </p>
            
-                  <p>
+                  <p class="mb-5">
                     <b>Start with the Function Declaration:
                     </b> 
                     Begin by using the CREATE OR REPLACE FUNCTION statement to name your function, calculate_Increment. Specify two parameters: incperc (increment percentage) and salary (current salary), both as numbers.
                   </p>
               
-                  <p><b>Define the Return Type:</b>
+                  <p class="mb-5"><b>Define the Return Type:</b>
                     Indicate that your function will return a number using the RETURN number clause.
                   </p>
                 
-                  <p><b>Begin the Function Body:
+                  <p class="mb-5"><b>Begin the Function Body:
                   </b>
                   Use the IS keyword to start the function body.
                   </p>
                  
-                  <p><b>Implement the Logic:
+                  <p class="mb-5"><b>Implement the Logic:
                 </b>
                 Inside the BEGIN and END; keywords, write the logic to calculate the increment. Multiply the salary by the increment percentage divided by 100.
                    </p>
                   
-                  <p><b>Return the Result:
+                  <p class="mb-5"><b>Return the Result:
                   </b>
                   Use the RETURN statement to output the calculated increment.
                  </p>
@@ -280,37 +283,39 @@ By following the steps above, you have successfully created a PL/SQL function, c
                 
           
           <div class="pt-5">
-            <p>Categories:  <a href="category-pl-sql.html">PL/SQL Hands-on</a>  Tags: <a href="#">#Create a PLSQL Function to Calculate Increment for the Employees</a>, <a href="#">#PL/SQL</a></p>
+            <p class="tag">Categories:  <a href="category-pl-sql.html">PL/SQL Hands-on</a>  Tags: <a href="#">#Create a PLSQL Function to Calculate Increment for the Employees</a>, <a href="#">#PL/SQL</a></p>
           </div>
 
 
 
-            <div class="comment-form-wrap pt-5">
-              <h3 class="mb-5" style="color: black;">Leave a comment</h3>
-              <form action="https://docs.google.com/forms/d/e/1FAIpQLSfy_pkp3cVBSPDNpS27p2F_zKnwC6O1dNXrFTscjn_XxITQ-w/formResponse" class="p-5 bg-light">
-                <div class="form-group">
-                  <label for="name">Name</label>
-                  <input type="text" class="form-control" id="name" name="entry.505217379" required autocomplete="on">
-                </div>
-                <div class="form-group">
-                  <label for="email">Email</label>
-                  <input type="email" class="form-control" id="email" name="entry.1718450961" required autocomplete="on">
-                </div>
-                <div class="form-group">
-                  <label for="subject">Subject</label>
-                  <input type="text" class="form-control" id="subject" name="entry.390459327" required autocomplete="on">
-                </div>
+          <div class="comment-form-wrap pt-5 m-auto">
+            
+            <form action="https://docs.google.com/forms/d/e/1FAIpQLSfy_pkp3cVBSPDNpS27p2F_zKnwC6O1dNXrFTscjn_XxITQ-w/formResponse" class="p-5 bg-transparent text-white m-auto">
+              <h3 class="mb-5" style="color: rgb(255, 255, 255);">Leave a comment</h3>
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" name="entry.505217379" required autocomplete="on">
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" name="entry.1718450961" required autocomplete="on">
+              </div>
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" class="form-control" id="subject" name="entry.390459327" required autocomplete="on">
+              </div>
 
-                <div class="form-group">
-                  <label for="message">Message</label>
-                  <textarea name="entry.117980495" id="message" cols="30" rows="10" class="form-control" required autocomplete="on"></textarea>
-                </div>
-                <div class="form-group">
-                  <input type="submit" value="Post Comment" class="btn btn-outline-dark">
-                </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea name="entry.117980495" id="message" cols="30" rows="10" class="form-control" required autocomplete="on"></textarea>
+              </div>
+              <div class="form-group m-auto text-center mt-4">
+                <input type="submit" value="Post Comment" class="btn btn-outline-dark">
+              </div>
 
-              </form>
-            </div>
+            </form>
+          </div>
+
 
           </div>
 
