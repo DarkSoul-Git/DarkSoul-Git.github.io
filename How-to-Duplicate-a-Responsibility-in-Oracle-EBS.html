@@ -12,8 +12,8 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   <link rel="manifest" href="/site.webmanifest">
 
-  <meta name="keywords" content="create custom responsibility Oracle EBS R12, Oracle EBS R12 guide, Oracle Apps responsibility, menu exclusions Oracle, Oracle EBS access control, Oracle E-Business Suite tutorial,  Oracle E-Business Suite, Oracle EBS tutorial, DarkSoul Git Blogs" />
-  <meta name="description" content="Looking to customize user access in Oracle EBS R12? This step-by-step guide on DarkSoul Git Blogs shows you how to create a custom responsibility, from defining data groups to setting menus and exclusions. Perfect for Oracle admins and beginners alike!" />
+  <meta name="keywords" content="duplicate responsibility Oracle EBS R12, Oracle EBS R12 guide, Oracle Apps responsibility, Shift + F5 Oracle shortcut, menu setup Oracle, Oracle EBS access control, Oracle E-Business Suite tutorial, Oracle EBS tutorial, DarkSoul Git Blogs" />
+  <meta name="description" content="Learn how to duplicate responsibilities in Oracle EBS R12 with this step-by-step guide on DarkSoul Git Blogs. Use Shift + F5 and other shortcuts to quickly create new responsibilities, assign menus, and configure user access. Perfect for Oracle admins!" />
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -32,7 +32,7 @@
   <link rel="stylesheet" href="css/flatpickr.min.css">
 
 
-  <title>How to Create a Custom Responsibility in Oracle EBS R12 - DarkSoul Git Blogs</title>
+  <title>How to Duplicate a Responsibility in Oracle EBS R12 - DarkSoul Git Blogs</title>
 
   <script type="application/ld+json">
     {
@@ -151,90 +151,112 @@ h4
           <div class="post-content-body content col-md-6 mb-4 m-auto text-white">
 
             <div class="col-md-12 mb-4" style="display: flex; margin-top: 10px; margin-bottom: 40px !important;">
-              <img src="images/How-to-Create-a-Custom-Responsibility-in-Oracle-EBS-R12.webp" alt="How-to-Create-a-Custom-Responsibility-in-Oracle-EBS-R12-post-cover-image" class="img-fluid rounded justify-content-center" style="margin: auto; border-radius: 15px !important;">
+              <img src="images/How-to-Duplicate-a-Responsibility-in-Oracle-EBS.webp" alt="How-to-Duplicate-a-Responsibility-in-Oracle-EBS-post-cover-image" class="img-fluid rounded justify-content-center" style="margin: auto; border-radius: 15px !important;">
             </div>
            
-            <h1 class="mb-lg-5" style="font-weight: bold; margin-top: 90px; text-align: center;">How to Create a Custom Responsibility in Oracle Apps R12 EBS</h1>
+            <h1 class="mb-lg-5" style="font-weight: bold; margin-top: 90px; text-align: center;">How to Duplicate a Responsibility in Oracle Apps R12 EBS</h1>
             <div class="post-meta align-items-center text-center mt-5">
               <figure class="author-figure mb-0 me-3 d-inline-block"><img src="images/darksoul.jpg" alt="Author - DarkSoul" class="img-fluid"></figure>
               <span class="d-inline-block mt-1 text-white">By DarkSoul</span>
-              <span class="text-white">&nbsp;-&nbsp; November 12, 2024</span>
+              <span class="text-white">&nbsp;-&nbsp; November 23, 2024</span>
             </div>
 
-            <p class="mt-5">Hey there! Looking to customize user access in Oracle E-Business Suite (EBS) R12? Creating a custom responsibility is a smart way to control what your users can see and do. Let’s walk through this in a few easy steps, so you’ll have it up and running in no time!</p>
+            <p class="mt-5">Managing responsibilities efficiently in Oracle E-Business Suite (EBS) is a key part of system administration. Sometimes, you may need to create a new responsibility that’s similar to an existing one—perhaps for a different team, user role, or department. Instead of manually recreating all the details, you can use shortcuts and tools within Oracle EBS to duplicate responsibilities quickly and accurately.</p>
 
+            <p>This guide walks you through a step-by-step process to duplicate a responsibility, highlighting useful shortcuts like Ctrl + Down Arrow and Shift + F5, and providing tips for saving time.</p>
+
+            <h2>Why This Method Works?</h2>
+            <p>Using <strong>Ctrl + Down Arrow</strong> (or the New icon) followed by <strong>Shift + F5</strong> allows you to quickly duplicate the responsibility’s data, field by field. While Shift + F5 duplicates only the field where the cursor is located, it provides an easy shortcut to replicate the core data of the responsibility. After that, you can manually copy the remaining details to complete the new record.
+
+            </p>
             <blockquote class="bg-dark text-white note m-auto mt-5" style="display: flex; height: fit-content; padding-top: 20px; padding-bottom: 20px; border-radius: 10px;">
-                <p>Before starting, make sure you have <strong style="color: rgb(171, 162, 255);">System Administrator</strong> access in Oracle EBS. </p>
+                <p>Before starting, make sure you have <strong style="color: rgb(171, 162, 255);">System Administrator</strong> access in Oracle EBS.</p>
             </blockquote>
             
-            <h2>Step 1: Get to Know the Basics of a Responsibility</h2>
-            <p>Here’s the scoop on what makes a responsibility tick in Oracle EBS:</p>
+            <h2>Step 1: Navigate to the Define Responsibility Form</h2>
+            <p>Log in with <strong>System Administrator</strong> access and navigate to:</p>
             <ul>
-                <li><strong>Data Group</strong>: Controls which database schema users can access.</li>
-                <li><strong>Menu</strong>: Defines the screens, reports, and functions users see.</li>
-                <li><strong>Request Group</strong>: Sets which concurrent programs they can run.</li>
+                <li><strong>System Administrator > Security > Responsibility > Define</strong></li>
             </ul>
-            <p>For your custom responsibility, you’ll decide on each of these.</p>
+            <p>This form is where all existing responsibilities are listed, and where you can query, edit, or create new responsibilities.</p>
             
-            <h2>Step 2: Open the Define Responsibility Screen</h2>
-            <p>Log in with <strong>System Administrator</strong> access, and go to <strong>Security > Responsibility > Define</strong>. This is where we’ll start creating your custom responsibility!</p>
-            <img src="images/Responsibility Form in Oracle EBS R12 - DarkSoul Git Blogs.webp" alt="Responsibility Form in Oracle EBS R12 - DarkSoul Git Blogs" class="img-fluid rounded justify-content-center mt-5" style="margin: auto; border-radius: 15px !important;">
-            <h2>Step 3: Enter Basic Info</h2>
-            <p>Now, let’s give it a name and some key details:</p>
+            <h2>Step 2: Query the Responsibility You Want to Duplicate</h2>
+            <p>Here’s how to find the responsibility you want to copy:</p>
             <ul>
-                <li><strong>Responsibility Name</strong>: Choose something descriptive, like "Finance Analyst" or "HR Admin."</li>
-                <li><strong>Application</strong>: Select the application this responsibility applies to, like "General Ledger" or "Inventory."</li>
-                <li><strong>Responsibility Key</strong>: Enter a unique identifier, like <strong>FIN_ANALYST_RESP</strong>.</li>
-                <li><strong>Description</strong>: Optional but helpful for future reference.</li>
+                <li>First, press <strong>F11</strong> when the form gets opened. It will get the form to query mode.</li>
+                <li>In the fields, enter the <strong>Responsibility Name</strong> or <strong>Key</strong>.</li>
+                <li>Press <strong>Ctrl + F11</strong> to query the responsibility.</li>
             </ul>
+            <p>The queried responsibility will appear in the form, ready for duplication.</p>
             
-            <h2>Step 4: Set the Data Group and Menu</h2>
+            <h2>Step 3: Create a New Responsibility</h2>
+            <p>Once the existing responsibility is displayed, follow these steps to start creating a new one:</p>
             <ul>
-                <li><strong>Data Group</strong>: Select an appropriate data group for the application.</li>
-                <li><strong>Menu</strong>: Choose an existing menu, or create a custom menu by going to <strong>Application > Menu</strong>. Add only the specific forms and functions your users need, then assign it here.</li>
+                <li>Press <strong>Ctrl + Down Arrow</strong>, or click the <strong>New icon</strong> (a blank page icon).After clicking the new icon, the form will clear and prepare a new responsibility record to fill.</li>
+                <img src="images/Click on the blank page or new icon - DarkSoul Git Blogs.webp" alt="Click on the blank page or new icon - DarkSoul Git Blogs" class="img-fluid rounded justify-content-center mt-5" style="margin: auto; border-radius: 15px !important; margin-bottom: 40px;">
+                <li>Now, enter the <strong>Responsibility Name, Responsibility Key and Description</strong>. Since the Responsibility Name and Key are unique for each responsibility, you shouldn't duplicate these fields</li>
+                <img src="images/Enter the responsibility name, key and description.webp" alt="Enter the responsibility name, key and description - DarkSoul Git Blogs" class="img-fluid rounded justify-content-center mt-5" style="margin: auto; border-radius: 15px !important;">
             </ul>
-            <img src="images/create a custom menu by going to Application and select Menu - DarkSoul Git Blogs.webp" alt="create a custom menu by going to Application and select Menu - DarkSoul Git Blogs" class="img-fluid rounded justify-content-center mt-5" style="margin: auto; border-radius: 15px !important;">
+            <p></p>
+            
+            <h2>Step 4: Duplicate Data Using Shift + F5</h2>
+            <p>To quickly copy data from the original responsibility into the new one:</p>
+            <ul>
+                <li>Move the cursor to the field you want to duplicate (e.g., <strong>Application</strong>).</li>
+                <li>Press <strong>Shift + F5</strong> to copy the data from the original responsibility for the selected field.</li>
+            </ul>
             <blockquote class="bg-dark text-white note m-auto mt-5" style="display: flex; height: fit-content; padding-top: 20px; padding-bottom: 20px; border-radius: 10px;">
-                <p><strong>Note:</strong> Use the <strong style="color: rgb(171, 162, 255);">Menu Exclusions</strong> tab to select specific items you don’t want visible for this responsibility, allowing fine-tuned control.</p>
-           
+              <p><strong>Note:</strong> The <strong>Shift + F5</strong> shortcut only duplicates the data in the field where the cursor is positioned. It does not copy the entire record. You’ll need to manually copy the remaining data (like menus, request groups, etc.) to the new responsibility.</p>
             </blockquote>
-           
-            <h2>Step 5: Add a Request Group (Optional but Handy)</h2>
-            <p>This is useful if you want to let users run certain reports or processes:</p>
+          
+            <h2>Step 5: Manually Copy the Remaining Data</h2>
+            <p>Since <strong>Shift + F5</strong> duplicates only one field at a time, manually copy the remaining fields for your new responsibility:</p>
             <ul>
-                <li><strong>Request Group</strong>: Choose an existing group or create a new one by going to <strong>Security > Responsibility > Request Group</strong> and adding the programs or reports you need.</li>
+                <li><strong>Menu:</strong> Assign the same or a different menu to the new responsibility.</li>
+                <li><strong>Request Group:</strong> Set the same or a new request group.</li>
+                <li>Update other fields, like <strong>Data Group</strong>, as needed.</li>
             </ul>
             
-            <h2>Step 6: Optional Security Settings</h2>
-            <p>Need extra control? Try these options:</p>
+            <h2>Step 6: Save the New Responsibility</h2>
+            <p>Once all fields are updated, click the <strong>Save icon</strong> (a diskette icon) to save the new responsibility.</p>
+            
+            <h2>Step 7: Assign the Responsibility to a User</h2>
+            <p>Now that the responsibility is created, assign it to a user:</p>
             <ul>
-                <li><strong>Effective Dates</strong>: Set start and end dates for the responsibility’s availability.</li>
-                <li><strong>Security Group</strong>: Typically set to "Standard." Only change if needed for your organization’s setup.</li>
+                <li>Navigate to <strong>Security > User > Define</strong>.</li>
+                <li>Search for the user, and in the Responsibilities tab, add the new responsibility.</li>
             </ul>
             
-            <h2>Step 7: Save and Assign to a User</h2>
-            <p>After you’ve set everything up, click <strong>Save</strong>. Then, assign it to a user by going to <strong>Security > User > Define</strong>, locating the user, and adding the responsibility to their list.</p>
-            
-            <h2>Step 8: Test It Out!</h2>
-            <p>Log in as that user (or ask them to) and check:</p>
+            <h2>Step 8: Test the Responsibility</h2>
+            <p>Log in as the assigned user (or have them do so) and verify:</p>
             <ul>
-                <li>Are the correct menu options visible?</li>
-                <li>Can they access assigned reports or concurrent programs?</li>
-                <li>Do restrictions set through Menu Exclusions work as expected?</li>
+                <li>Are the correct menu options available?</li>
+                <li>Can the user access assigned reports or concurrent programs?</li>
+                <li>Do restrictions, like menu exclusions, function as expected?</li>
             </ul>
             
-             
             <h2>That’s It!</h2>
-            <p>Congratulations! You now have a custom responsibility set up in Oracle EBS R12. This allows you to finely control user access, which helps boost productivity and security.</p>
-            <p>Got questions? Drop them in the comments below. Happy configuring!</p>
+            <p>Congratulations! You’ve successfully duplicated a responsibility in Oracle EBS. This approach saves time and ensures consistency when setting up user access. If you run into any issues or have questions, feel free to ask. Happy configuring!</p>
+            
+            <blockquote class="bg-dark text-white note m-auto mt-5" style="display: flex; flex-direction: column; height: fit-content; padding-top: 20px; padding-bottom: 20px; border-radius: 10px;">
+              <p style="margin-bottom: 10px;"><strong>Keyboard Shortcuts</strong></p>
+            
+                <p style="margin-bottom: 10px;"><strong>▸ F11</strong> - to get into <strong>Query mode</strong> in oracle forms.</p>
+                <p style="margin-bottom: 10px;"><strong>▸ Ctrl + F11</strong> - to <strong>query/search</strong> for records in forms.</p>
+                <p style="margin-bottom: 10px;"><strong>▸ Ctrl + Down arrow</strong> - to create a <strong>new</strong> record.</p>
+                <p style="margin-bottom: 10px;"><strong>▸ Shift + F5</strong> - to <strong>Duplicate</strong> the data for the selected field..</p>
+            
+            </blockquote>
+
+
             </div>
           <!-- Note section Need to update-->
-          <div class="bg-dark text-white note col-md-6 m-auto mt-5" style="display: flex; height: 200px; border-radius: 10px;">
-            <p class="m-auto">Need to duplicate a responsibility in Oracle EBS? Let's make it easy—check out this quick guide - <a href="How-to-Duplicate-a-Responsibility-in-Oracle-EBS.html" title="How to Duplicate a responsibility in Oracle EBS">How to Duplicate a Responsibility in Oracle EBS</a> to copy and assign it in no time!</p>
-          </div>
+          <!-- <div class="bg-dark text-white note col-md-6 m-auto mt-5" style="display: flex; height: 200px; border-radius: 10px;">
+            <p class="m-auto">If you want to dive deeper and create your own custom user in Oracle EBS R12, check out <a href="#" title="How to create a user in Oracle Apps R12 EBS">How to create a user in Oracle Apps R12 EBS</a> for a step-by-step guide.</p>
+          </div> -->
 
           <div class="pt-5 text-white col-md-6 m-auto">
-            <p class="tag">Categories:  <a href="category-oracle-ebs.html">Oracle EBS </a>  Tags: <a href="#">#Oracle EBS Basics</a>, <a href="#">#How to Create a Custom Responsibility in Oracle EBS R12</a></p>
+            <p class="tag">Categories:  <a href="category-oracle-ebs.html">Oracle EBS </a>  Tags: <a href="#">#Oracle EBS Basics</a>, <a href="#">#How to Duplicate a Responsibility in Oracle EBS</a></p>
           </div>
 
 
