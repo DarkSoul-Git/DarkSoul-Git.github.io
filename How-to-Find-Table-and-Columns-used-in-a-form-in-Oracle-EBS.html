@@ -1,0 +1,344 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="author" content="DarkSoul">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <meta name="keywords" content="find table Oracle EBS, identify columns Oracle EBS form, Oracle EBS diagnostics, Record History Oracle, SQL Developer Oracle EBS, Oracle E-Business Suite tutorial, Oracle EBS tutorial, backend form analysis Oracle, DarkSoul Git Blogs" />
+  <meta name="description" content="Learn step-by-step how to identify the tables and columns used in Oracle EBS forms. This guide explores Record History, Diagnostics mode, SQL queries, and more to trace the backend of any Oracle EBS form." />
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="fonts/icomoon/style.css">
+  <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+  <link rel="stylesheet" href="css/aos.css">
+  <link rel="stylesheet" href="css/glightbox.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <link rel="stylesheet" href="css/flatpickr.min.css">
+
+
+  <title>How to Find Table and Columns used in a form in Oracle EBS - DarkSoul Git Blogs</title>
+
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Organization",
+      "url": "https://darksoul-git.github.io/",
+      "name": "DarkSoul - Best UI/UX Designs and blogs for better understanding",
+      "description": "DarkSoul, your number-one source for all things. We're dedicated to giving you the very best of designs and blogs with an emphasis on technical, graphical, and logical",
+      "logo": "https://darksoul-git.github.io/images/logo.png",
+      "sameAs": [
+        "https://codepen.io/DarkSoul-/",
+        "https://dribbble.com/DarkSoulinDribble/"
+      ]
+    }
+    </script>
+
+<style>
+  @font-face 
+		{
+			font-family: "icomoon";
+        	src: url("https://darksoul-git.github.io/fonts/icomoon/fonts/icomoon.ttf?");
+  			font-display: swap;
+		}
+  h2{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;	
+
+}
+h4
+		{
+			font-weight: bolder !important;
+			color: white !important;
+          	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;	
+		}
+    p
+    {
+      font-size: large;
+    }
+.content
+        {
+			      font-family: "Work Sans", sans-serif !important;
+            text-align: justify; 
+            color: black;
+            line-height: 1.6;
+        }
+        .content h3, .content h2, .content .h1
+        {
+          margin-top: 60px;
+          margin-bottom: 40px;
+          font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif !important;
+        }
+        .date{ color: black !important;}
+        .blog-entry{color: black !important;}
+        .note
+        {
+            margin-top: 50px;
+            display: flex;
+        }
+        .note p
+        {
+            font-size: large !important;
+            width: 90%;
+            margin: auto;
+        }
+        .note p a 
+        {
+          color: rgb(171, 162, 255);
+        }
+        .note pre
+        {
+          font-size: large !important;
+          margin: auto;
+          margin-left: 10px;
+        }
+        .tag
+        {
+          font-size: larger;
+          font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif !important;
+        }
+        .tag a
+        {
+          color: rgb(255, 255, 255);
+          font-weight: 600;
+          font-style: italic;
+        }
+      
+</style>
+<script type="text/javascript">
+  (function(c,l,a,r,i,t,y){
+    c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+    t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+    y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+  })(window, document, "clarity", "script", "iir3jmgyug");
+</script>
+	<!-- Google tag (gtag.js)-->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-015RX6GMQJ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  
+    gtag('config', 'G-015RX6GMQJ');
+  </script> 
+</head>
+<body class="bg-gradient">
+
+   <!-- Mobile Navigation Bar -->
+   <div class="site-mobile-menu site-navbar-target" id="mobilenav">
+      
+   </div>
+   <!-- Desktop Navigation Bar -->
+   <nav class="site-nav bg-transparent" id="header">
+   
+   </nav>
+
+  <section class="section">
+    <div class="container">
+
+      <div class="row blog-entries element-animate">
+
+        <div class="main-content">
+
+          <div class="post-content-body content col-md-6 mb-4 m-auto text-white">
+
+            <div class="col-md-12 mb-4" style="display: flex; margin-top: 10px; margin-bottom: 40px !important;">
+              <img src="images/How to Find the Table and Columns used in a form in Oracle EBS.webp" alt="How to Find the Table and Columns used in a form in Oracle EBS-post-cover-image" class="img-fluid rounded justify-content-center" style="margin: auto; border-radius: 15px !important;">
+            </div>
+           
+            <h1 class="mb-lg-5" style="font-weight: bold; margin-top: 90px; text-align: center;">How to Find the Table and Columns used in a Form in Oracle EBS</h1>
+            <div class="post-meta align-items-center text-center mt-5">
+              <figure class="author-figure mb-0 me-3 d-inline-block"><img src="images/darksoul.jpg" alt="Author - DarkSoul" class="img-fluid"></figure>
+              <span class="d-inline-block mt-1 text-white">By DarkSoul</span>
+              <span class="text-white">&nbsp;-&nbsp; December 05, 2024</span>
+            </div>
+
+            <p class="mt-5">Have you ever stared at an Oracle EBS form and wondered, What table is this pulling data from? What columns are being updated? As developers or technical consultants, we often face this question while customizing reports, creating integrations, or debugging issues.</p>
+
+            <p>Fear not! Oracle EBS has built-in tools and techniques to unravel this mystery, and I’m here to guide you through the process. By the end of this blog, you’ll have the confidence to trace the database objects behind any form.</p>
+
+            <h2>Step 1: Identify the Form</h2>
+            <ul>
+              <li>Open a form in Oracle EBS (say <strong>Users</strong> form).</li>
+              <li>Note the name or purpose of the form, as this will help you narrow down the relevant tables and columns.</li>
+            </ul>
+            
+            
+            <h2>Step 2: Check the Record History</h2>
+            <p>Oracle EBS has a nifty feature called <strong>Record</strong> History, which can directly hint at the table behind the form.</p>
+            <ul>
+                <li>Navigate to<strong> Help > Record History from the menu.</strong></li>
+               
+                <li>A pop-up window will appear, showing the base table and primary key columns associated with the current record in the form.</li>
+                
+            </ul>
+            <img src="images/Go to Help and Record History - DarkSoul Git Blogs.webp" alt="Go to Help and Record History - DarkSoul Git Blogs" class="img-fluid rounded justify-content-center mt-5" style="margin: auto !important; border-radius: 15px !important;">
+            <blockquote class="bg-dark text-white note m-auto mt-5" style="display: flex; height: fit-content; padding-top: 20px; padding-bottom: 20px; border-radius: 10px;">
+              <p><strong>Pro Tip:</strong> This step is often the quickest way to identify the main table, so always check here first.</p>
+          </blockquote>
+
+          <h2>Step 3: Enable Diagnostics Mode</h2>
+          <p>Sometimes, the Record History feature might not give you all the details you need. That’s when Diagnostics mode comes to the rescue.</p>
+          
+          <ul>
+              <li>Go to<strong> Help > Diagnostics > Examine.</strong></li>
+              <li>If prompted, enter the Apps password. This allows you to inspect the block, field, and associated database objects for the form.</li>
+              <li>In the pop-up window:</li>
+              <ul>
+                <li><strong>Block:</strong> Select the block associated with the form.</li>
+                <li><strong>Field:</strong> Select the field you’re investigating.</li>
+              </ul>
+          </ul>
+          <img src="images/Go to Help - Diagnostics -  Examine - DarkSoul Git Blogs.webp" alt="Go to Help-Diagnostics-Examine - DarkSoul Git Blogs - DarkSoul Git Blogs" class="img-fluid rounded justify-content-center mt-5 mb-5" style="margin: auto !important; border-radius: 15px !important;">
+          
+          <p class="mt-5">The block and field information will usually be tied to a table and column in the database. Note these details down.</p>
+          
+          
+          <blockquote class="bg-dark text-white note m-auto mt-5" style="display: flex; height: fit-content; padding-top: 20px; padding-bottom: 20px; border-radius: 10px;">
+            <p><strong>Note:</strong> Ensure you have the necessary permissions to use <strong>Diagnostics</strong> mode.</p>
+        </blockquote>
+
+            <h2>Step 4: Review the Table Schema in SQL Developer</h2>
+            <p>Now that you have some table and field names, it’s time to dig deeper using an SQL tool like SQL Developer or TOAD.</p>
+            <p>Run the below query to explore the table and its columns:</p>
+         
+            <blockquote class="bg-dark text-white note m-auto mt-5 mb-5" style="display: flex; height: fit-content; padding-top: 20px; padding-bottom: 20px; border-radius: 10px;">
+              <pre>
+  SELECT column_name, data_type
+  FROM all_tab_columns
+  WHERE table_name = 'table_name'
+  ORDER BY column_id;</pre>
+          </blockquote>
+          
+            <p>Replace <strong>'table_name'</strong> with the table identified in steps 2 or 3.</p>
+
+            <blockquote class="bg-dark text-white note m-auto mt-5" style="display: flex; height: fit-content; padding-top: 20px; padding-bottom: 20px; border-radius: 10px;">
+              <p><strong>Pro Tip:</strong> If the table name includes a prefix (like AP_, AR_, etc.), it’s likely tied to a specific module (e.g., Accounts Payable, Accounts Receivable). This can guide your exploration.</p>
+          </blockquote>
+            
+            <h2>Step 5: Check the View Definitions (if Applicable)</h2>
+            <p>Forms often query views rather than direct tables. If you suspect a view is involved:</p>
+         
+                <p>Run this query to get the view definition:</p>
+                <blockquote class="bg-dark text-white note m-auto mt-5 mb-5" style="display: flex; height: fit-content; padding-top: 20px; padding-bottom: 20px; border-radius: 10px;">
+                  <pre>
+  SELECT text
+  FROM all_views
+  WHERE view_name = 'view_name';</pre>
+              </blockquote>              
+              <p>Analyze the query within the view to trace the underlying tables.</p>
+           
+
+             <blockquote class="bg-dark text-white note m-auto mt-5" style="display: flex; height: fit-content; padding-top: 20px; padding-bottom: 20px; border-radius: 10px;">
+              <p><strong>Note:</strong> Views often combine multiple tables or include calculated fields, so understanding the view logic is key.</p>
+          </blockquote>
+            
+            <h2>Wrapping Up</h2>
+            <p>With these steps, you’re equipped to confidently trace the backend structure of any Oracle EBS form. Whether you’re analyzing the Record History, leveraging Diagnostics mode, or diving into SQL queries, there’s always a way to uncover the mystery behind the scenes.</p>
+            <p>Remember, understanding the database structure not only helps with debugging but also empowers you to build better customizations and reports.</p>
+            <p>So, the next time you’re staring at an EBS form, don’t just wonder. Go explore!</p>
+       
+          
+
+            </div>
+          <!-- Note section Need to update-->
+          <!-- <div class="bg-dark text-white note col-md-6 m-auto mt-5" style="display: flex; height: 200px; border-radius: 10px;">
+            <p class="m-auto">If you want to dive deeper and create your own custom user in Oracle EBS R12, check out <a href="#" title="How to create a user in Oracle Apps R12 EBS">How to create a user in Oracle Apps R12 EBS</a> for a step-by-step guide.</p>
+          </div> -->
+
+          <div class="pt-5 text-white col-md-6 m-auto">
+            <p class="tag">Categories:  <a href="category-oracle-ebs.html">Oracle EBS </a>  Tags: <a href="#">#Oracle EBS Basics</a>, <a href="#">#How to Find Table and Columns used in a form</a></p>
+          </div>
+
+
+
+          <div class="comment-form-wrap pt-5 col-md-6 m-auto">
+            
+            <form action="https://docs.google.com/forms/d/e/1FAIpQLSfy_pkp3cVBSPDNpS27p2F_zKnwC6O1dNXrFTscjn_XxITQ-w/formResponse" class="p-5 bg-transparent text-white m-auto">
+              <h3 class="mb-5" style="color: rgb(255, 255, 255);">Leave a comment</h3>
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" name="entry.505217379" required autocomplete="on">
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" name="entry.1718450961" required autocomplete="on">
+              </div>
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" class="form-control" id="subject" name="entry.390459327" required autocomplete="on">
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea name="entry.117980495" id="message" cols="30" rows="10" class="form-control" required autocomplete="on"></textarea>
+              </div>
+              <div class="form-group m-auto text-center mt-4">
+                <input type="submit" value="Post Comment" class="btn btn-outline-dark">
+              </div>
+
+            </form>
+          </div>
+
+
+          </div>
+
+        </div>
+
+        <!-- END main-content -->
+
+        
+ 
+
+      </div>
+    </div>
+  </section>
+
+
+
+ 
+ <!-- /.site-footer -->
+ <footer class="site-footer bg-dark" id="footer">
+		
+ </footer>
+
+    
+    <!-- Preloader -->
+    <div id="overlayer"></div>
+    <div class="loader">
+      <div class="spinner-border text-primary" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+    </div>
+    <script async src="js/header.js"></script>
+    <script async src="js/footer.js"></script>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+   
+
+    <script src="js/flatpickr.min.js"></script>
+
+
+    <script src="js/aos.js"></script>
+    <script src="js/glightbox.min.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/counter.js"></script>
+    <script src="js/custom.js"></script>
+
+    
+  </body>
+  </html>
